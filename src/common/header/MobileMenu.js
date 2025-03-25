@@ -152,7 +152,7 @@ const MobileMenu = () => {
                     <SidebarWrap>
                         <div className="mobile-nav__content">
                             <div className="logo-box">
-                                <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/mobile-nav-logo.png"} width="155" alt="" /></Link>
+                                <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo.png"} width="155" alt="" /></Link>
                             </div>
                             <NavIcon to="#">
                                 <AiIcons.AiOutlineClose
@@ -170,11 +170,13 @@ const MobileMenu = () => {
                             <ul className="mobile-nav__contact list-unstyled">
                                 <li>
                                     <i className="fa fa-envelope" aria-hidden="true"></i>
-                                    <a href="mailto:needhelp@packageName__.com">needhelp@const.com</a>
+                                    <a href="mailto:info.charot@gmail.com">info.charot@gmail.com</a>
                                 </li>
                                 <li>
                                     <i className="fa fa-phone" aria-hidden="true"></i>
-                                    <a href="tel:666-888-0000">666 888 0000</a>
+                                    <a href="tel:
++251908686868">
+                                    +251908686868</a>
                                 </li>
                             </ul>
                             <div className="mobile-nav__top">
