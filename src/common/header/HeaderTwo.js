@@ -36,7 +36,9 @@ export default class HeaderTwo extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <p>Call anytime </p>
-                                                    <h6><a href="tel:980009630">+ 98 (000) - 9630</a></h6>
+                                                    <h6><a href="tel:+0908686868
+">+251908686868
+                                                    </a></h6>
                                                 </div>
                                             </div>
                                         </li>
@@ -48,7 +50,7 @@ export default class HeaderTwo extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <p>Send email </p>
-                                                    <h6><a href="mailto:yourmail@email.com">info@company.com</a></h6>
+                                                    <h6><a href="mailto:info.charot@gmail.com">info.charot@gmail.com</a></h6>
                                                 </div>
                                             </div>
                                         </li>
@@ -59,8 +61,8 @@ export default class HeaderTwo extends React.Component {
                                                     <span className="icon-placeholder"></span>
                                                 </div>
                                                 <div className="text-box">
-                                                    <p>380 St Kilda Road</p>
-                                                    <h6>Melbourne, Australia</h6>
+                                                    <p>Addis Ababa - Ethiopia</p>
+                                                    <h6>Lebu, Foziyana bldg, 4th floor Addis</h6>
                                                 </div>
                                             </div>
                                         </li>

@@ -30,20 +30,20 @@ export default class HeroTwo extends React.Component {
 
                             {/* Start Main Slider Two */}
                             <SwiperSlide className="swiper-slide">
-                                <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/slider-v2-img1.jpg)'}}></div>
+                                <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/door.jpg)'}}></div>
                                 <div className="shape1"></div>
 
                                 <div className="container">
                                     <div className="main-slider-two__content">
                                         <div className="tagline">
-                                            <p>Welcome to cOMPANY</p>
+                                            <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>Consulting <br /> Market Leader <br /> Expert</h2>
+                                            <h2>Beautifully   <br /> Crafted Modern<br />  Doors</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">
-                                                <span className="txt">Book Appointment</span>
+                                                <span className="txt">Contucs Us</span>
                                                 <i className="fa fa-angle-double-right"></i>
                                             </Link>
                                         </div>
@@ -60,14 +60,14 @@ export default class HeroTwo extends React.Component {
                                 <div className="container">
                                     <div className="main-slider-two__content">
                                         <div className="tagline">
-                                            <p>Welcome to cOMPANY</p>
+                                            <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>Consulting <br /> Market Leader <br /> Expert</h2>
+                                            <h2>Transform Your   <br /> Space with Our <br /> Modern Eco Doors</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">
-                                                <span className="txt">Book Appointment</span>
+                                                <span className="txt">Contucs Us </span>
                                                 <i className="fa fa-angle-double-right"></i>
                                             </Link>
                                         </div>
@@ -84,14 +84,14 @@ export default class HeroTwo extends React.Component {
                                 <div className="container">
                                     <div className="main-slider-two__content">
                                         <div className="tagline">
-                                            <p>Welcome to cOMPANY</p>
+                                        <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>Consulting <br /> Market Leader <br /> Expert</h2>
+                                            <h2>High-Quality Doors    <br /> Quick Fixes <br /> Long-Lasting Results</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">
-                                                <span className="txt">Book Appointment</span>
+                                                <span className="txt">Contact Us</span>
                                                 <i className="fa fa-angle-double-right"></i>
                                             </Link>
                                         </div>

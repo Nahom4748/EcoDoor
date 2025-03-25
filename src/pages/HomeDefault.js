@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderOne from "../common/header/HeaderOne";
 import HeroOne from "../components/hero/HeroOne";
 import WhyChooseOne from "../components/why-choose-us/WhyChooseOne";
 import AboutOne from "../components/about/AboutOne";
@@ -13,12 +12,14 @@ import TestimonialOne from "../components/testimonial/TestimonialOne";
 import ExcellentWorkOne from "../components/excellent-work/ExcellentWorkOne";
 import BlogOne from "../components/blog/BlogOne";
 import FooterOne from '../common/footer/FooterOne';
+import HeaderTwo from "../common/header/HeaderTwo";
+import HeroTwo from "../components/hero/HeroTwo";
 
 const HomeDefault = () => {
     return (
         <>
-            <HeaderOne />
-            <HeroOne />
+            <HeaderTwo />
+            <HeroTwo />
             <WhyChooseOne />
             <AboutOne />
             <BrandOne />

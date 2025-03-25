@@ -12,20 +12,6 @@ const menuData = [
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Home One',
-                path: '/',
-            },
-            {
-                title: 'Home Two',
-                path: '/home-two',
-            },
-            {
-                title: 'Home Three',
-                path: '/home-three',
-            },
-        ],
     },
     {
         title: 'About',
@@ -35,100 +21,26 @@ const menuData = [
     {
         title: 'Services',
         path: '#',
-
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
-
-        subNav: [
-            {
-                title: 'Services',
-                path: '/services',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Arbor Management',
-                path: '/arbor-management',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Garden Management',
-                path: '/garden-management',
-            },
-            {
-                title: 'Nursery & Tree Farm',
-                path: '/nursery',
-            },
-            {
-                title: 'Trimming & Pruning',
-                path: '/trimming',
-            },
-            {
-                title: 'Pests & Weeds Control',
-                path: '/weeds-control',
-            },
-            {
-                title: 'Fruits & Flowers Garden',
-                path: '/flowers-garden',
-            },
-        ],
+  
     },
 
     {
-        title: 'Pages',
+        title: 'our Product',
+        path: '/aboutus',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+
+    {
+        title: 'Projects',
         path: '#',
 
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
 
-        subNav: [
-            {
-                title: 'Team',
-                path: '/team',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Team Details',
-                path: '/team-details',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Portfolio 01',
-                path: '/portfolio-1',
-            },
-            {
-                title: 'Portfolio 02',
-                path: '/portfolio-2',
-            },
-            {
-                title: 'Faq',
-                path: '/faq',
-            },
-        ],
-    },
-
-    {
-        title: 'Blog',
-        path: '#',
-
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
-
-        subNav: [
-            {
-                title: 'Blog',
-                path: '/blog',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Blog Grid',
-                path: '/blog-grid',
-                cName: 'sub-nav',
-            },
-            {
-                title: 'Blog Details',
-                path: '/blog-details',
-            },
-        ],
+      
     },
 
     {
@@ -178,28 +90,19 @@ const DropdownLink = styled(Link)`
 `;
 
 const SubMenu = ({ item }) => {
-    const [subnav, setSubnav] = useState(false);
-
-    const showSubnav = () => setSubnav(!subnav);
+  
 
     return (
         <>
-            <SidebarLink to={process.env.PUBLIC_URL + `${item.path}`} onClick={item.subNav && showSubnav}>
+            <SidebarLink to={process.env.PUBLIC_URL + `${item.path}`} >
                 <div>
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
                 <div>
-                    {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
                 </div>
             </SidebarLink>
-            {subnav &&
-                item.subNav.map((data, index) => (
-                    <DropdownLink to={process.env.PUBLIC_URL + `${data.path}`} key={index}>
-                        {item.icon}
-                        <SidebarLabel>{data.title}</SidebarLabel>
-                    </DropdownLink>
-                ))}
+        
         </>
     );
 };
