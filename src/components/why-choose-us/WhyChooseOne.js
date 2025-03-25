@@ -81,12 +81,8 @@ export default class WhyChooseOne extends React.Component {
                     <div className="why-choose-one__bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/pattern/why-choose-v1-pattern.png)'}}></div>
                     <div className="container">
                         <div className="sec-title text-center">
-                            <div className="sec-title__tagline">
-                                <span className="left"></span>
-                                <h6>People love</h6>
-                                <span className="right"></span>
-                            </div>
-                            <h2 className="sec-title__title">Why Choose Us Our Garden</h2>
+                           
+                            <h2 className="sec-title__title">Why Choose Us</h2>
                         </div>
 
                         <div className="row">
@@ -99,12 +95,12 @@ export default class WhyChooseOne extends React.Component {
                                             <div className="col-xl-4">
                                                 <ul className="tab-buttons clearfix list-unstyled">
                                                     <li data-tab="#services" className="tab-btn wow fadeInLeft"
-                                                        data-wow-delay="100ms" data-wow-duration="1000ms">Guarantee Services
+                                                        data-wow-delay="100ms" data-wow-duration="1000ms">Eco-Friendly 
                                                     </li>
                                                     <li data-tab="#environmental" className="tab-btn active-btn wow fadeInLeft"
-                                                        data-wow-delay="200ms" data-wow-duration="1000ms">Environmental Friendly</li>
+                                                        data-wow-delay="200ms" data-wow-duration="1000ms">Durability & Security</li>
                                                     <li data-tab="#support" className="tab-btn wow fadeInLeft"
-                                                        data-wow-delay="300ms" data-wow-duration="1000ms">Expert Support Team
+                                                        data-wow-delay="300ms" data-wow-duration="1000ms">Customer Satisfaction
                                                     </li>
                                                 </ul>
                                             </div>
@@ -126,7 +122,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-gardening"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Gardening <br /> Design</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/`}>Sustainably <br />Materials</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -135,7 +131,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-farmer"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Available <br /> 24/7</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/`}>Non-Toxic & <br />  Safe Finishes</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -144,7 +140,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-shovels"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experience <br /> of 20 year</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/`}>Efficient  <br /> Design</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -153,7 +149,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-pruning-shears"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experts <br /> Worker</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/`}> Recycling <br /> Reduction </Link></h4>
                                                                         </div>
                                                                     </li>
                                                                 </ul>
@@ -165,7 +161,7 @@ export default class WhyChooseOne extends React.Component {
                                                     {/* Start Tab */}
                                                     <div className="tab active-tab" id="environmental">
                                                         <div className="tabs-content__inner">
-                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img1.jpg)'}}></div>
+                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img2.jpg)'}}></div>
                                                             <div className="tabs-content__list clearfix">
                                                                 <ul className="clearfix">
                                                                     <li>
@@ -173,7 +169,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-gardening"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Gardening <br /> Design</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Long-Term  <br /> Strength</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -182,7 +178,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-farmer"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Available <br /> 24/7</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Safe for All  <br /> Environments</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -191,7 +187,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-shovels"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experience <br /> of 20 year</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Fire-Rated &  <br /> Safety</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -200,7 +196,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-pruning-shears"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experts <br /> Worker</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}> Long-Term   <br /> Cost Savings</Link></h4>
                                                                         </div>
                                                                     </li>
                                                                 </ul>
@@ -212,7 +208,7 @@ export default class WhyChooseOne extends React.Component {
                                                     {/* Start Tab */}
                                                     <div className="tab" id="support">
                                                         <div className="tabs-content__inner">
-                                                            <div className="tabs-content__inner-bg"style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img1.jpg)'}}></div>
+                                                            <div className="tabs-content__inner-bg"style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img3.jpg)'}}></div>
                                                             <div className="tabs-content__list clearfix">
                                                                 <ul className="clearfix">
                                                                     <li>
@@ -220,7 +216,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-gardening"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Gardening <br /> Design</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Expert<br />  Guidance</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -229,7 +225,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-farmer"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Available <br /> 24/7</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Meet Your    <br /> Needs</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -238,7 +234,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-shovels"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experience <br /> of 20 year</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Support &  <br /> Maintenance</Link></h4>
                                                                         </div>
                                                                     </li>
 
@@ -247,7 +243,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-pruning-shears"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Experts <br /> Worker</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Long-Term   <br /> Relationship</Link></h4>
                                                                         </div>
                                                                     </li>
                                                                 </ul>

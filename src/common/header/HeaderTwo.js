@@ -12,7 +12,7 @@ export default class HeaderTwo extends React.Component {
             <>
                 <header className="main-header main-header-one main-header-two">
                     {/* Start Main Header Two Top */}
-                    <div className="main-header-two__top">
+                    <div className="main-header-two__top ">
                         <div className="auto-container">
                             <div className="main-header-two__top-inner">
                                 <div className="main-header-two__top-left">
@@ -36,8 +36,7 @@ export default class HeaderTwo extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <p>Call anytime </p>
-                                                    <h6><a href="tel:+0908686868
-">+251908686868
+                                                    <h6><a href="tel:+0908686868">+251908686868
                                                     </a></h6>
                                                 </div>
                                             </div>

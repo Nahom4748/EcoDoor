@@ -30,8 +30,7 @@ export default class HeroTwo extends React.Component {
 
                             {/* Start Main Slider Two */}
                             <SwiperSlide className="swiper-slide">
-                                <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/door.jpg)'}}></div>
-                                <div className="shape1"></div>
+                                <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/slider-v3-img1.jpg)'}}></div>
 
                                 <div className="container">
                                     <div className="main-slider-two__content">
@@ -55,7 +54,6 @@ export default class HeroTwo extends React.Component {
                             {/* Start Main Slider Two */}
                             <SwiperSlide className="swiper-slide">
                                 <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/slider-v2-img2.jpg)'}}></div>
-                                <div className="shape1"></div>
 
                                 <div className="container">
                                     <div className="main-slider-two__content">
@@ -79,7 +77,6 @@ export default class HeroTwo extends React.Component {
                             {/* Start Main Slider Two */}
                             <SwiperSlide className="swiper-slide">
                                 <div className="image-layer" style={{backgroundImage: 'url('+publicUrl+'assets/images/slides/slider-v2-img1.jpg)'}}></div>
-                                <div className="shape1"></div>
 
                                 <div className="container">
                                     <div className="main-slider-two__content">
