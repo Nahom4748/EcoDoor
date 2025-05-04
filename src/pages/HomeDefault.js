@@ -14,6 +14,9 @@ import BlogOne from "../components/blog/BlogOne";
 import FooterOne from '../common/footer/FooterOne';
 import HeaderTwo from "../common/header/HeaderTwo";
 import HeroTwo from "../components/hero/HeroTwo";
+import ServiceTwo from "../components/service/ServiceTwo";
+import AboutThree from "../components/about/AboutThree";
+import ServiceThree from "../components/service/ServiceThree";
 
 const HomeDefault = () => {
     return (
@@ -21,7 +24,12 @@ const HomeDefault = () => {
             <HeaderTwo />
             <HeroTwo />
             <WhyChooseOne />
-            <AboutOne />
+          
+            
+            <ServiceTwo/>
+            <AboutThree />
+                        <ServiceThree />
+            
             <BrandOne />
             <ContactOne />
             <ServiceOne />

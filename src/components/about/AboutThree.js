@@ -39,19 +39,20 @@ export default class AboutThree extends React.Component {
                             {/* Start About Three Counter */}
                             <div className="col-xl-2 col-lg-3 col-md-4">
                                 <div className="about-three__counter">
-                                    <ul>
-                                        <li>
-                                            <h2><span className="odometer" data-count="85">00</span>%</h2>
-                                            <h3>Satisfied Customers.</h3>
-                                            <p>Prevai tolerably discours <br /> estimable applaud.</p>
-                                        </li>
+                                <ul>
+  <li>
+    <h2><span className="odometer" data-count="95">00</span>%</h2>
+    <h3>Satisfied Customers</h3>
+    <p>Trusted by builders, architects and homeowners<br />  across Ethiopia.</p>
+  </li>
 
-                                        <li>
-                                            <h2><span className="odometer" data-count="99">00</span>%</h2>
-                                            <h3>Claim Success </h3>
-                                            <p>Prevai tolerably discours <br /> estimable applaud.</p>
-                                        </li>
-                                    </ul>
+  <li>
+    <h2><span className="odometer" data-count="99">00</span>%</h2>
+    <h3>Project Success Rate</h3>
+    <p>Delivering quality WPC doors with  <br /> precision and care.</p>
+  </li>
+</ul>
+
                                 </div>
                             </div>
                             {/* End About Three Counter */}
@@ -76,13 +77,12 @@ export default class AboutThree extends React.Component {
                                         <div className="sec-title-three__tagline">
                                             <h6>About company</h6>
                                         </div>
-                                        <h2 className="sec-title-three__title">We want help you <br /> to grow planting.</h2>
+                                        <h2 className="sec-title-three__title">We’re Here to  Build
+                                        <br />  Beautiful Spaces.</h2>
                                     </div>
 
                                     <div className="about-three__content-text1">
-                                        <p>There are many variats of passages the majority
-                                            have suffered a in some form by available companu
-                                            alte pic alte in some form by to at available.</p>
+                                        <p>Charot Eco Doors is a proudly family-owned business rooted in Ethiopia’s rich trading history. Inspired by tradition and powered by innovation, we manufacture eco-friendly WPC products that elevate the standards of modern living.</p>
                                     </div>
 
                                     <div className="about-three__content-text2">
@@ -90,8 +90,8 @@ export default class AboutThree extends React.Component {
                                             <div className="col-xl-6 col-lg-6 col-md-6">
                                                 <div className="single-box">
                                                     <ul>
-                                                        <li><h4><span className="icon-tick"></span>Watering & Irrigation</h4></li>
-                                                        <li><h4><span className="icon-tick"></span>Plant Stands & Trays</h4></li>
+                                                        <li><  h6><span className="icon-tick"></span>Durable, stylish WPC doors</  h6></li>
+                                                        <li><  h6><span className="icon-tick"></span>Smart solutions for homes & offices</  h6></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -99,8 +99,8 @@ export default class AboutThree extends React.Component {
                                             <div className="col-xl-6 col-lg-6 col-md-6">
                                                 <div className="single-box">
                                                     <ul>
-                                                        <li><h4><span className="icon-tick"></span>Lawn Maintenance</h4></li>
-                                                        <li><h4><span className="icon-tick"></span>Yard & Garden Decor</h4></li>
+                                                        <li><  h6><span className="icon-tick"></span>Eco-friendly manufacturing</  h6></li>
+                                                        <li><  h6><span className="icon-tick"></span>Locally Made with Global Standards</  h6></li>
                                                     </ul>
                                                 </div>
                                             </div>

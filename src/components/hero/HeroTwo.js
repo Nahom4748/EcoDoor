@@ -38,7 +38,7 @@ export default class HeroTwo extends React.Component {
                                             <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>Beautifully   <br /> Crafted Modern<br />  Doors</h2>
+                                            <h2>Eco Doors    <br />  Strong Stylish, <br /> and Sustainable.</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">
@@ -61,7 +61,7 @@ export default class HeroTwo extends React.Component {
                                             <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>Transform Your   <br /> Space with Our <br /> Modern Eco Doors</h2>
+                                            <h2>High-Quality    <br /> Eco Doors <br /> for Modern Spaces.</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">
@@ -84,7 +84,7 @@ export default class HeroTwo extends React.Component {
                                         <p>Welcome to Charot Eco Doors</p>
                                         </div>
                                         <div className="title">
-                                            <h2>High-Quality Doors    <br /> Quick Fixes <br /> Long-Lasting Results</h2>
+                                            <h2>High-Quality   <br /> Doors Quick Fixes <br /> Long-Lasting Results</h2>
                                         </div>
                                         <div className="btn-box">
                                             <Link to={process.env.PUBLIC_URL + `/contact`} className="thm-btn">

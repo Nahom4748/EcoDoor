@@ -234,7 +234,7 @@ export default class WhyChooseOne extends React.Component {
                                                                             <div className="icon-box">
                                                                                 <span className="icon-shovels"></span>
                                                                             </div>
-                                                                            <h4><Link to={process.env.PUBLIC_URL + `/ `}>Support &  <br /> Maintenance</Link></h4>
+                                                                            <h4><Link to={process.env.PUBLIC_URL + `/`}>Support &  <br /> Maintenance</Link></h4>
                                                                         </div>
                                                                     </li>
 

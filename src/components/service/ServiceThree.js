@@ -18,15 +18,13 @@ export default class ServiceThree extends React.Component {
                         <div className="services-three__top">
                             <div className="sec-title-three">
                                 <div className="sec-title-three__tagline">
-                                    <h6>What we do</h6>
+                                    <h6>Our Core Values</h6>
                                 </div>
-                                <h2 className="sec-title-three__title">Get exceptional <br /> service for growth</h2>
+                                <h2 className="sec-title-three__title">Built on Purpose.  <br /> Guided by Values. </h2>
                             </div>
 
                             <div className="services-three__top-text">
-                                <p>There are many variats of passage Lorem Ipsum the majority
-                                    have suffered alte in some form by available Companuy
-                                    alte pic alte in some form by to at available.</p>
+                                <p> At <strong>Charot Eco Doors</strong>, our mission goes beyond making doors. We stand for craftsmanship, sustainability, and integrity in every product and service we deliver.</p>
                             </div>
                         </div>
 
@@ -47,17 +45,12 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Garden Landscaping</Link></h2>
+                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Crafted with Care</Link></h2>
                                         </div>
-                                        <p>The laying out andin in care of
-                                            plot of ground devoted partally
-                                            lokally or wholly avail Natural at
-                                            element present garden...</p>
+                                        <p>We build every door with precision, detail, and pride in quality.</p>
 
                                         <div className="bottom-box">
-                                            <div className="btn-box">
-                                                <Link to={process.env.PUBLIC_URL + `/arbor-management`}>Read More</Link>
-                                            </div>
+                                        
                                             <div className="count-box">
                                                 <span>01</span>
                                             </div>
@@ -83,17 +76,12 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Soil Marking</Link></h2>
+                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Eco-Friendly</Link></h2>
                                         </div>
-                                        <p>The laying out andin in care of
-                                            plot of ground devoted partally
-                                            lokally or wholly avail Natural at
-                                            element present garden...</p>
+                                        <p>Sustainable materials and green practices are at our core.</p>
 
                                         <div className="bottom-box">
-                                            <div className="btn-box">
-                                                <Link to={process.env.PUBLIC_URL + `/arbor-management`}>Read More</Link>
-                                            </div>
+                                      
                                             <div className="count-box">
                                                 <span>02</span>
                                             </div>
@@ -119,17 +107,12 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Patios & Courtyards</Link></h2>
+                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Customer First</Link></h2>
                                         </div>
-                                        <p>The laying out andin in care of
-                                            plot of ground devoted partally
-                                            lokally or wholly avail Natural at
-                                            element present garden...</p>
+                                        <p>TWe listen, support, and deliver what matters most to you.</p>
 
                                         <div className="bottom-box">
-                                            <div className="btn-box">
-                                                <Link to={process.env.PUBLIC_URL + `/arbor-management`}>Read More</Link>
-                                            </div>
+                                         
                                             <div className="count-box">
                                                 <span>03</span>
                                             </div>
@@ -155,17 +138,12 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Commercial Planting</Link></h2>
+                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Built on Trust</Link></h2>
                                         </div>
-                                        <p>The laying out andin in care of
-                                            plot of ground devoted partally
-                                            lokally or wholly avail Natural at
-                                            element present garden...</p>
+                                        <p>We’re honest, transparent, and committed to doing what’s right.</p>
 
                                         <div className="bottom-box">
-                                            <div className="btn-box">
-                                                <Link to={process.env.PUBLIC_URL + `/arbor-management`}>Read More</Link>
-                                            </div>
+                                           
                                             <div className="count-box">
                                                 <span>04</span>
                                             </div>
