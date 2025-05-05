@@ -30,8 +30,7 @@ const HomeDefault = () => {
             <AboutThree />
                         <ServiceThree />
             
-            <BrandOne />
-            <ContactOne />
+         
             <ServiceOne />
             <ProjectOne />
             <WorkProcessOne />

@@ -45,7 +45,7 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Crafted with Care</Link></h2>
+                                            <h2><Link >Crafted with Care</Link></h2>
                                         </div>
                                         <p>We build every door with precision, detail, and pride in quality.</p>
 
@@ -76,7 +76,7 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Eco-Friendly</Link></h2>
+                                            <h2><Link>Eco-Friendly</Link></h2>
                                         </div>
                                         <p>Sustainable materials and green practices are at our core.</p>
 
@@ -107,7 +107,7 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Customer First</Link></h2>
+                                            <h2><Link >Customer First</Link></h2>
                                         </div>
                                         <p>TWe listen, support, and deliver what matters most to you.</p>
 
@@ -138,7 +138,7 @@ export default class ServiceThree extends React.Component {
 
                                     <div className="services-three__single-content">
                                         <div className="title">
-                                            <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Built on Trust</Link></h2>
+                                            <h2><Link>Built on Trust</Link></h2>
                                         </div>
                                         <p>We’re honest, transparent, and committed to doing what’s right.</p>
 

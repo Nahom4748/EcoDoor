@@ -12,10 +12,10 @@ export default class ServiceOne extends React.Component {
                         <div className="sec-title text-center">
                             <div className="sec-title__tagline">
                                 <span className="left"></span>
-                                <h6>Our Services</h6>
+                                <h6>Exceptional Product Features</h6>
                                 <span className="right"></span>
                             </div>
-                            <h2 className="sec-title__title">Professional Featured</h2>
+                            <h5 className="sec-title__title">Our WPC products are distinguished by these characteristic features that set them apart from traditional materials.</h5>
                         </div>
 
                         <div className="row">
@@ -36,8 +36,8 @@ export default class ServiceOne extends React.Component {
                                     </div>
 
                                     <div className="services-one__single-content text-center">
-                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Irrigation And <br /> Drainage </Link></h2>
-                                        <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Waterproof </Link></h2>
+                                        <p>Our WPC products are water and moisture resistant, ensuring longevity in humid environments.</p>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +60,8 @@ export default class ServiceOne extends React.Component {
                                     </div>
 
                                     <div className="services-one__single-content text-center">
-                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Tree And Shrub <br /> Services </Link></h2>
-                                        <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Soundproof  </Link></h2>
+                                        <p>Acoustic walls and doors absorb sounds, creating a peaceful environment in your space.</p>
                                     </div>
                                 </div>
                             </div>
@@ -84,8 +84,8 @@ export default class ServiceOne extends React.Component {
                                     </div>
 
                                     <div className="services-one__single-content text-center">
-                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Garden Commercial <br /> Landscaping </Link></h2>
-                                        <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Fire Retardant </Link></h2>
+                                        <p>Our WPC products have high fire resistance properties for enhanced safety..</p>
                                     </div>
                                 </div>
                             </div>
@@ -108,8 +108,8 @@ export default class ServiceOne extends React.Component {
                                     </div>
 
                                     <div className="services-one__single-content text-center">
-                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Lawn And Garden br Care</Link></h2>
-                                        <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                        <h2><Link to={process.env.PUBLIC_URL + `/arbor-management`}>Anti-Bacterial </Link></h2>
+                                        <p>Our products are clean and neat, preventing the growth of bacteria for healthier spaces.</p>
                                     </div>
                                 </div>
                             </div>
