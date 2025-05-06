@@ -6,6 +6,7 @@ import BrandOne from "../components/brand/BrandOne";
 import ContactOne from "../components/contact/ContactOne";
 import ServiceOne from "../components/service/ServiceOne";
 import ProjectOne from "../components/project/ProjectOne";
+// import ProjectThree from "../components/project/ProjectThree.js";
 import WorkProcessOne from "../components/work-process/WorkProcessOne";
 import FaqOne from "../components/faq/FaqOne";
 import TestimonialOne from "../components/testimonial/TestimonialOne";
@@ -17,6 +18,10 @@ import HeroTwo from "../components/hero/HeroTwo";
 import ServiceTwo from "../components/service/ServiceTwo";
 import AboutThree from "../components/about/AboutThree";
 import ServiceThree from "../components/service/ServiceThree";
+import ProjectThree from "../components/project/ProjectThree.js";
+import TeamTwo from "../components/team/TeamTwo.js";
+import TestimonialTwo from "../components/testimonial/TestimonialTwo.js";
+import OurCustomers from "../components/service/OurCustomers.js";
 
 const HomeDefault = () => {
     return (
@@ -24,20 +29,22 @@ const HomeDefault = () => {
             <HeaderTwo />
             <HeroTwo />
             <WhyChooseOne />
-          
-            
+        
             <ServiceTwo/>
             <AboutThree />
-                        <ServiceThree />
+            <ServiceThree />
             
-         
             <ServiceOne />
-            <ProjectOne />
+            {/* <ProjectOne /> */}
+            <ProjectThree/> 
             <WorkProcessOne />
+            <OurCustomers />
+            <TeamTwo />
             <FaqOne />
-            <TestimonialOne />
-            <ExcellentWorkOne />
-            <BlogOne />
+            {/* <TestimonialOne /> */}
+            <TestimonialTwo />
+            {/* <ExcellentWorkOne /> */}
+            {/* <BlogOne /> */}
             <FooterOne />
         </>
     )
