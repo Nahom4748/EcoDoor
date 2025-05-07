@@ -181,7 +181,8 @@ const MobileMenu = () => {
                             </ul>
                             <div className="mobile-nav__top">
                                 <div className="mobile-nav__social">
-                                    <a href="https://twitter.com/"><span className="fab fa-twitter"></span></a>
+                                <a href="https://t.me/YourGroupUsername" target="_blank" rel="noopener noreferrer">
+                                                <span className="fab fa-telegram-plane"></span></a>
                                     <a href="https://facebook.com/"><span className="fab fa-facebook-square"></span></a>
                                     <a href="https://pinterest.com/"><span className="fab fa-pinterest-p"></span></a>
                                     <a href="https://instagram.com/"><span className="fab fa-instagram"></span></a>
