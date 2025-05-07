@@ -9,8 +9,8 @@ const TeamDetails = () => {
         <>
             <HeaderThree />
             <Breadcrumb 
-                heading="Team Details"
-                currentPage="Team Details" 
+                heading="vision-mission"
+                currentPage="vision-mission" 
             />
             <TeamContent />
             <FooterOne />

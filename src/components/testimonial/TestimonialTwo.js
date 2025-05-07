@@ -54,8 +54,8 @@ export default class TestimonialTwo extends React.Component {
                             </div>
                             <h2 className="sec-title__title">
                                 People Say About Us</h2>
-                            <p className="text">There are many variations of passages of available, but the majority <br />
-                                have suffered alteration in some form by injected randomised.</p>
+                            <p className="text">Reliable & Sustainable
+ </p>
                         </div>
                         <div className="row">
                             <div className="col-xl-12">
@@ -66,11 +66,8 @@ export default class TestimonialTwo extends React.Component {
                                         {/* Start Testimonilas Two Single */}
                                         <div className="testimonilas-two__single">
                                             <div className="testimonilas-two__single-top">
-                                                <p>“ There are many variations of passages of available at
-                                                    but the majority have suffered alteration in some atlok
-                                                    form, by injected randomised words which koiu layio
-                                                    don’t look even slightly believable avialabalo ore a do
-                                                    psum is a simply to free dumy to text the pricing.”</p>
+                                                <p>“ The best doors I've ever installed! Charot's craftsmanship and attention to sustainability make them my top choice for every project.
+                                                Previous.”</p>
                                             </div>
 
                                             <div className="testimonilas-two__single-bottom">
@@ -85,22 +82,12 @@ export default class TestimonialTwo extends React.Component {
                                                     </div>
 
                                                     <div className="text-box">
-                                                        <h3>Robert Smith</h3>
-                                                        <p>Ceo & Founder</p>
+                                                        <h3>Home Builder</h3>
                                                     </div>
                                                 </div>
 
                                                 <div className="right-box">
-                                                    <div className="rating-box">
-                                                        <ul>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>5.0 Out of 3</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -109,11 +96,7 @@ export default class TestimonialTwo extends React.Component {
                                         {/* Start Testimonilas Two Single */}
                                         <div className="testimonilas-two__single">
                                             <div className="testimonilas-two__single-top">
-                                                <p>“ There are many variations of passages of available at
-                                                    but the majority have suffered alteration in some atlok
-                                                    form, by injected randomised words which koiu layio
-                                                    don’t look even slightly believable avialabalo ore a do
-                                                    psum is a simply to free dumy to text the pricing.”</p>
+                                                <p>“ Charot doors add elegance and durability to any space. Their eco-conscious approach makes them a perfect choice for modern homes.”</p>
                                             </div>
 
                                             <div className="testimonilas-two__single-bottom">
@@ -128,32 +111,14 @@ export default class TestimonialTwo extends React.Component {
                                                     </div>
 
                                                     <div className="text-box">
-                                                        <h3>Robert Smith</h3>
-                                                        <p>Ceo & Founder</p>
+                                                        <h3>Interior Designer
+                                                        </h3>
+                                                     
                                                     </div>
                                                 </div>
 
                                                 <div className="right-box">
-                                                    <div className="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span className="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span className="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span className="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span className="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span className="icon-pointed-star"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>5.0 Out of 3</p>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -163,11 +128,7 @@ export default class TestimonialTwo extends React.Component {
                                         {/* Start Testimonilas Two Single */}
                                         <div className="testimonilas-two__single">
                                             <div className="testimonilas-two__single-top">
-                                                <p>“ There are many variations of passages of available at
-                                                    but the majority have suffered alteration in some atlok
-                                                    form, by injected randomised words which koiu layio
-                                                    don’t look even slightly believable avialabalo ore a do
-                                                    psum is a simply to free dumy to text the pricing.”</p>
+                                                <p>“ Charot Door Manufacturer exceeded my expectations! Their eco-friendly doors are durable, stylish, and energy-efficient. Highly recommended for quality craftsmanship and sustainability.”</p>
                                             </div>
 
                                             <div className="testimonilas-two__single-bottom">
@@ -182,22 +143,12 @@ export default class TestimonialTwo extends React.Component {
                                                     </div>
 
                                                     <div className="text-box">
-                                                        <h3>Robert Smith</h3>
-                                                        <p>Ceo & Founder</p>
+                                                        <h3>Business Owner</h3>
                                                     </div>
                                                 </div>
 
                                                 <div className="right-box">
-                                                    <div className="rating-box">
-                                                        <ul>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>5.0 Out of 3</p>
+                                               
                                                 </div>
                                             </div>
                                         </div>
@@ -205,46 +156,7 @@ export default class TestimonialTwo extends React.Component {
 
 
                                         {/* Start Testimonilas Two Single */}
-                                        <div className="testimonilas-two__single">
-                                            <div className="testimonilas-two__single-top">
-                                                <p>“ There are many variations of passages of available at
-                                                    but the majority have suffered alteration in some atlok
-                                                    form, by injected randomised words which koiu layio
-                                                    don’t look even slightly believable avialabalo ore a do
-                                                    psum is a simply to free dumy to text the pricing.”</p>
-                                            </div>
-
-                                            <div className="testimonilas-two__single-bottom">
-                                                <div className="left-box">
-                                                    <div className="img-box">
-                                                        <div className="inner">
-                                                            <img src={publicUrl+"assets/images/testimonial/testimonial-v2-img2.jpg"} alt="#" />
-                                                        </div>
-                                                        <div className="icon-box">
-                                                            <span className="icon-quote-1"></span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="text-box">
-                                                        <h3>Robert Smith</h3>
-                                                        <p>Ceo & Founder</p>
-                                                    </div>
-                                                </div>
-
-                                                <div className="right-box">
-                                                    <div className="rating-box">
-                                                        <ul>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                            <li><span className="icon-pointed-star"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <p>5.0 Out of 3</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                  
                                         {/* End Testimonilas Two Single */}
 
                                     </div>

@@ -17,7 +17,7 @@ export default class ContactForm extends React.Component {
                                             <h6>Call to Action</h6>
                                             <span className="right"></span>
                                         </div>
-                                        <h2 className="sec-title__title">You Can Easily Book Our <br /> Appointment</h2>
+                                        <h2 className="sec-title__title">Get in Touch <br /> </h2>
                                     </div>
 
 
@@ -59,7 +59,8 @@ export default class ContactForm extends React.Component {
                                             <div className="col-xl-6 col-lg-6 col-md-6">
                                                 <div className="contact-one__form-btn">
                                                     <button className="thm-btn" type="submit" data-loading-text="Please wait...">
-                                                        <span className="txt">Book Now</span>
+                                                        <span className="txt">Send Message
+                                                        </span>
                                                         <i className="fa fa-angle-double-right"></i>
                                                     </button>
                                                 </div>

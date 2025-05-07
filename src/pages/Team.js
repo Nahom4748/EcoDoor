@@ -5,18 +5,23 @@ import TeamFour from '../components/team/TeamFour';
 import ExcellentWorkOne from '../components/excellent-work/ExcellentWorkOne';
 import TestimonialOne from '../components/testimonial/TestimonialOne';
 import FooterOne from '../common/footer/FooterOne';
+import ProjectThree from '../components/project/ProjectThree';
+import ServiceOne from '../components/service/ServiceOne';
+import WorkProcessTwo from '../components/work-process/WorkProcessTwo';
+import WorkProcessOne from '../components/work-process/WorkProcessOne';
 
 const Team = () => {
     return (
         <>
             <HeaderThree />
             <Breadcrumb 
-                heading="Team"
-                currentPage="Team" 
+                heading="projects"
+                currentPage="projects" 
             />
-            <TeamFour />
-            <ExcellentWorkOne />
-            <TestimonialOne />
+            <ProjectThree />
+            <ServiceOne />
+            <WorkProcessOne/>
+           
             <FooterOne />
         </>
     )

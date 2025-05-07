@@ -54,8 +54,8 @@ function App() {
             <Route path={`${process.env.PUBLIC_URL}/trimming`} exact element={<TrimmingPruning />} />
             <Route path={`${process.env.PUBLIC_URL}/weeds-control`} exact element={<PestsWeedsControl />} />
             <Route path={`${process.env.PUBLIC_URL}/flowers-garden`} exact element={<FruitsFlowersGarden />} />
-            <Route path={`${process.env.PUBLIC_URL}/team`} exact element={<Team />} />
-            <Route path={`${process.env.PUBLIC_URL}/team-details`} exact element={<TeamDetails />} />
+            <Route path={`${process.env.PUBLIC_URL}/projects`} exact element={<Team />} />
+            <Route path={`${process.env.PUBLIC_URL}/vision-mission`} exact element={<TeamDetails />} />
             <Route path={`${process.env.PUBLIC_URL}/portfolio-1`} exact element={<PortfolioOne />} />
             <Route path={`${process.env.PUBLIC_URL}/portfolio-2`} exact element={<PortfolioTwo />} />
             <Route path={`${process.env.PUBLIC_URL}/faq`} exact element={<Faq />} />

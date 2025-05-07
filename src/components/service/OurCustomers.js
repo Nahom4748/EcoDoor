@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class ServiceOne extends React.Component {
+export default class OurCustomers extends React.Component {
     render(){
         let publicUrl = process.env.PUBLIC_URL+'/'
         return (
@@ -12,13 +12,10 @@ export default class ServiceOne extends React.Component {
                 <div className="sec-title text-center">
                   <div className="sec-title__tagline">
                     <span className="left"></span>
-                    <h6>Exceptional Product Features</h6>
+                    <h6>Our Customers</h6>
                     <span className="right"></span>
                   </div>
-                  <h5 className="sec-title__title">
-                    Our WPC products are distinguished by these characteristic
-                    features that set them apart from traditional materials.
-                  </h5>
+                  <h5 className="sec-title__title">Ideal Customers</h5>
                 </div>
 
                 <div className="row">
@@ -85,12 +82,12 @@ export default class ServiceOne extends React.Component {
                           <Link
                             to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
-                            Waterproof{" "}
+                            Real Estate{" "}
                           </Link>
                         </h2>
                         <p>
-                          Our WPC products are water and moisture resistant,
-                          ensuring longevity in humid environments.
+                          Eco-friendly, stylish doors that boost value and
+                          sustainability.
                         </p>
                       </div>
                     </div>
@@ -160,12 +157,12 @@ export default class ServiceOne extends React.Component {
                           <Link
                             to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
-                            Soundproof{" "}
+                            Hotels{" "}
                           </Link>
                         </h2>
                         <p>
-                          Acoustic walls and doors absorb sounds, creating a
-                          peaceful environment in your space.
+                          Create a premium guest experience with modern,
+                          soundproof, and elegant eco doors.
                         </p>
                       </div>
                     </div>
@@ -235,12 +232,12 @@ export default class ServiceOne extends React.Component {
                           <Link
                             to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
-                            Fire Retardant{" "}
+                            Office Buildings{" "}
                           </Link>
                         </h2>
                         <p>
-                          Our WPC products have high fire resistance properties
-                          for enhanced safety..
+                          Modern, durable, and energy-efficient doors for
+                          professional spaces.
                         </p>
                       </div>
                     </div>
@@ -310,17 +307,17 @@ export default class ServiceOne extends React.Component {
                           <Link
                             to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
-                            Anti-Bacterial{" "}
+                            HomeownersHomeowners{" "}
                           </Link>
                         </h2>
                         <p>
-                          Our products are clean and neat, preventing the growth
-                          of bacteria for healthier spaces.
+                          Secure, stylish, and eco-conscious doors for every
+                          home.
                         </p>
                       </div>
                     </div>
                   </div>
-                  {/* End Services One Single */}
+                  {/* End Services One Single Our Customers */}
                 </div>
               </div>
             </section>

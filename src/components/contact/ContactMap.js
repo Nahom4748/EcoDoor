@@ -13,7 +13,7 @@ export default class ContactMap extends React.Component {
                                 <div className="contact-page-bottom-map">
                                     <iframe
                                         title="Address"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+                                        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126120.09469724937!2d38.64628248143627!3d8.948822595005472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x164b81f2be0781ed%3A0xe1749b5e158850f7!2sWPXH%2BGFM%2C%20Addis%20Ababa!3m2!1d8.9488317!2d38.7286844!5e0!3m2!1sen!2set!4v1746637435183!5m2!1sen!2set"
                                         className="contact-page__google-map" allowfullscreen>
                                     </iframe>
                                 </div>

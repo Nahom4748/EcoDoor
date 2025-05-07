@@ -38,26 +38,10 @@ export default class HeaderThree extends React.Component {
 
                                                 <div className="content-box">
                                                     <p>Call In Anytime</p>
-                                                    <a href="tel:9288006780">+92 ( 8800 ) - 6780</a>
+                                                    <a href="tel:+251908686868">+251-90-868-6868</a>
                                                 </div>
                                             </div>
 
-                                            <SearchButton />
-
-                                            <div className="right-box">
-                                                <div className="top-box">
-                                                    <div className="icon-box">
-                                                        <span className="icon-dollar"></span>
-                                                    </div>
-                                                    <div className="text-box">
-                                                        <p>We do not received <br /> extra charges </p>
-                                                    </div>
-                                                </div>
-
-                                                <div className="btn-box">
-                                                    <Link to={process.env.PUBLIC_URL + `/contact`}>Book Appointment</Link>
-                                                </div>
-                                            </div>
 
                                         </div>
                                     </div>
