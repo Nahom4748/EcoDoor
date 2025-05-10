@@ -3,6 +3,8 @@ import HeaderThree from '../common/header/HeaderThree';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import TeamContent from '../components/team/TeamContent';
 import FooterOne from '../common/footer/FooterOne';
+// import MissionVision from '../components/team/MissionVision';
+
 
 const TeamDetails = () => {
     return (
@@ -13,6 +15,7 @@ const TeamDetails = () => {
                 currentPage="vision-mission" 
             />
             <TeamContent />
+            {/* <MissionVision /> */}
             <FooterOne />
         </>
     )

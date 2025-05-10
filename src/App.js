@@ -13,6 +13,7 @@ import Service from "./pages/Service";
 import Team from "./pages/Team";
 import TeamDetails from "./pages/TeamDetails";
 
+import MissionVision from "./pages/MissionVision.js";
 import Contact from "./pages/Contact";
 import ScrollToTopRoute from './components/scroll-to-top-route/ScrollToTopRoute';
 
@@ -31,20 +32,48 @@ function App() {
   return (
     <Router>
       <ScrollToTopRoute />
-        <Routes>
-            <Route path={`${process.env.PUBLIC_URL}/`} exact element={<HomeDefault />} />
-  
-            <Route path={`${process.env.PUBLIC_URL}/about`} exact element={<About />} />
-            <Route path={`${process.env.PUBLIC_URL}/services`} exact element={<Service />} />
+      <Routes>
+        <Route
+          path={`${process.env.PUBLIC_URL}/`}
+          exact
+          element={<HomeDefault />}
+        />
 
-      
-            <Route path={`${process.env.PUBLIC_URL}/projects`} exact element={<Team />} />
-            <Route path={`${process.env.PUBLIC_URL}/vision-mission`} exact element={<TeamDetails />} />
-      
-      
-            <Route path={`${process.env.PUBLIC_URL}/contact`} exact element={<Contact />} />
-        </Routes>
-        <ScrollToTop className="scrollUp" smooth top="1500" component={<FaAngleUp />} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/about`}
+          exact
+          element={<About />}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/services`}
+          exact
+          element={<Service />}
+        />
+
+        <Route
+          path={`${process.env.PUBLIC_URL}/projects`}
+          exact
+          element={<Team />}
+        />
+        {/* <Route path={`${process.env.PUBLIC_URL}/vision-mission`} exact element={<TeamDetails />} /> */}
+        <Route
+          path={`${process.env.PUBLIC_URL}/vision-mission`}
+          exact
+          element={<MissionVision />}
+        />
+
+        <Route
+          path={`${process.env.PUBLIC_URL}/contact`}
+          exact
+          element={<Contact />}
+        />
+      </Routes>
+      <ScrollToTop
+        className="scrollUp"
+        smooth
+        top="1500"
+        component={<FaAngleUp />}
+      />
     </Router>
   );
 }
