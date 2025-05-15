@@ -77,8 +77,8 @@ export default class HeaderOne extends React.Component {
 
                                             <div className="main-header-one__bottom-middle">
                                                 <div className="main-menu-box">
-                                                    <MobileMenu />
-                                                    <Nav />
+                                                    <MobileMenu className="MobileMenu" />
+                                                    <Nav className="Nav" />
                                                 </div>
                                             </div>
 

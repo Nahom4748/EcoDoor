@@ -95,13 +95,24 @@ export default class FooterOne extends React.Component {
                                         </div>
 
                                         <div class="footer-one__right-bottom wow animated fadeInUp" data-wow-delay="0.1s">
+                                            
+                                            {/* Previous social links commented out for reference */}
+                                            {/*
                                             <ul class="social-links">
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-twitter"></span></Link></li>
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-facebook"></span></Link></li>
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-pinterest"></span></Link></li>
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-instagram"></span></Link></li>
                                             </ul>
-
+                                            */}
+                                            <ul class="social-links">
+                                                <li><a href="https://t.me/charotecodoors" target="_blank" rel="noopener noreferrer"><span class="fab fa-telegram-plane"></span></a></li>
+                                                <li><a href="https://wa.me/251908686868" target="_blank" rel="noopener noreferrer"><span class="fab fa-whatsapp"></span></a></li>
+                                                <li><a href="https://www.tiktok.com/@charot.eco.doors?_t=ZM-8uhQZluVwrH&_r=1" target="_blank" rel="noopener noreferrer"><span class="fab fa-tiktok"></span></a></li>
+                                                <li><a href="https://web.facebook.com/people/Charot-Eco-Doors/pfbid02HKC258FgsG2t2mNm3fqNi78Ttzb3sdkqW7kL4Hkf8qZTciRmZTV9fLTiTwAjonBQl/?rdid=EYOU075vyYWKlYWe&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F15guT785js%2F%3F_rdc%3D1%26_rdr" target="_blank" rel="noopener noreferrer"><span class="fab fa-facebook"></span></a></li>
+                                            </ul>
+                                           
+                                         
                                             <div class="footer-one__right-bottom-contact">
                                                 <div class="icon-box">
                                                     <span class="icon-phone-call"></span>

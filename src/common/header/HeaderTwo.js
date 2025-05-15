@@ -36,8 +36,7 @@ export default class HeaderTwo extends React.Component {
                                                 </div>
                                                 <div className="text-box">
                                                     <p>Call anytime </p>
-                                                    <h6><a href="tel:+0908686868">+251908686868
-                                                    </a></h6>
+                                                    <h6><a href="tel:+251908686868">+251908686868</a></h6>
                                                 </div>
                                             </div>
                                         </li>
@@ -99,8 +98,8 @@ export default class HeaderTwo extends React.Component {
 
                                             <div className="main-header-one__bottom-middle">
                                                 <div className="main-menu-box">
-                                                    <MobileMenu />
-                                                    <Nav />
+                                                    <MobileMenu className="MobileMenu" />
+                                                    <Nav className="Nav" />
                                                 </div>
                                             </div>
 

@@ -11,38 +11,29 @@ const menuData = [
         path: '/',
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
-
     },
     {
         title: 'About',
         path: '/about',
     },
-
     {
         title: 'Services',
-        path: '#',
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
-  
-    },
-
-    {
-        title: 'our Product',
-        path: '/aboutus',
+        path: '/services',
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
     },
-
     {
         title: 'Projects',
-        path: '#',
-
+        path: '/projects',
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
-
-      
     },
-
+    {
+        title: 'Vision & Mission',
+        path: '/vision-mission',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
     {
         title: 'Contact',
         path: '/contact',
@@ -54,16 +45,20 @@ const SidebarLink = styled(Link)`
     color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 28px;
     list-style: none;
     height: 50px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0;
     &:hover {
         background: #123316;
         color: #fff;
         cursor: pointer;
+    }
+    &:last-of-type {
+        margin-bottom: 32px;
     }
 `;
 
@@ -89,20 +84,78 @@ const DropdownLink = styled(Link)`
     }
 `;
 
-const SubMenu = ({ item }) => {
-  
+const SidebarNav = styled.nav`
+    background-color: #3cab41;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    right: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+    transition: 350ms;
+    z-index: 100001;
+    box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+`;
 
+const SidebarWrap = styled.div`
+    width: 100%;
+`;
+
+const Overlay = styled.div`
+    display: ${({ sidebar }) => (sidebar ? 'block' : 'none')};
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 100000;
+`;
+
+const CloseIconWrap = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px 0 0;
+`;
+
+const SubMenu = ({ item, closeSidebar }) => {
+    const [subnav, setSubnav] = useState(false);
+    const showSubnav = (e) => {
+        e.preventDefault();
+        setSubnav(!subnav);
+    };
+    const handleLinkClick = () => {
+        if (!item.children) {
+            closeSidebar();
+        }
+    };
     return (
         <>
-            <SidebarLink to={process.env.PUBLIC_URL + `${item.path}`} >
+            <SidebarLink
+                to={item.path ? process.env.PUBLIC_URL + `${item.path}` : '#'}
+                onClick={item.children ? showSubnav : handleLinkClick}
+            >
                 <div>
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
                 <div>
+                    {item.children && (subnav ? item.iconOpened : item.iconClosed)}
                 </div>
             </SidebarLink>
-        
+            {item.children && subnav &&
+                item.children.map((child, idx) => (
+                    <DropdownLink
+                        to={process.env.PUBLIC_URL + `${child.path}`}
+                        key={idx}
+                        onClick={closeSidebar}
+                    >
+                        {child.title}
+                    </DropdownLink>
+                ))
+            }
         </>
     );
 };
@@ -116,83 +169,60 @@ const NavIcon = styled(Link)`
     margin-left: 20px;
 `;
 
-const SidebarNav = styled.nav`
-    background-color: #3cab41;
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth;
-    box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-    top: 0;
-    right: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
-    transition: 350ms;
-    z-index: 99999;
-`;
-
-const SidebarWrap = styled.div`
-    width: 100%;
-`;
-
-const MobileMenu = () => {
+const MobileMenu = ({ className = "" }) => {
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
     let publicUrl = process.env.PUBLIC_URL+'/'
-
+    const closeSidebar = () => setSidebar(false);
     return (
-        <>
-            <>
-                <NavIcon to="#" style={{ justifyContent: 'flex-end' }}>
-                    <AiOutlineBars onClick={showSidebar} />
-                </NavIcon>
-
-                <SidebarNav sidebar={sidebar}>
-                    <SidebarWrap>
-                        <div className="mobile-nav__content">
-                            <div className="logo-box">
-                                <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo.png"} width="155" alt="" /></Link>
-                            </div>
-                            <NavIcon to="#">
-                                <AiIcons.AiOutlineClose
-                                    style={{
-                                        color: 'white',
-                                        fontSize: '18px',
-                                        justifyContent: 'flex-start',
-                                    }}
-                                    onClick={showSidebar}
-                                />
-                            </NavIcon>
-                            {menuData.map((item, index) => (
-                                <SubMenu item={item} key={index} />
-                            ))}
-                            <ul className="mobile-nav__contact list-unstyled">
-                                <li>
-                                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                                    <a href="mailto:info.charot@gmail.com">info.charot@gmail.com</a>
-                                </li>
-                                <li>
-                                    <i className="fa fa-phone" aria-hidden="true"></i>
-                                    <a href="tel:
-+251908686868">
-                                    +251908686868</a>
-                                </li>
-                            </ul>
-                            <div className="mobile-nav__top">
-                                <div className="mobile-nav__social">
-                                <a href="https://t.me/YourGroupUsername" target="_blank" rel="noopener noreferrer">
-                                                <span className="fab fa-telegram-plane"></span></a>
-                                    <a href="https://facebook.com/"><span className="fab fa-facebook-square"></span></a>
-                                    <a href="https://pinterest.com/"><span className="fab fa-pinterest-p"></span></a>
-                                    <a href="https://instagram.com/"><span className="fab fa-instagram"></span></a>
-                                </div>
+        <div className={className}>
+            <NavIcon to="#" style={{ justifyContent: 'flex-end' }}>
+                <AiOutlineBars onClick={showSidebar} />
+            </NavIcon>
+            <Overlay sidebar={sidebar} onClick={closeSidebar} />
+            <SidebarNav sidebar={sidebar}>
+                <SidebarWrap>
+                    <div className="mobile-nav__content">
+                        <div className="logo-box">
+                            <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo.png"} width="155" alt="" /></Link>
+                        </div>
+                        <CloseIconWrap>
+                            <AiIcons.AiOutlineClose
+                                style={{
+                                    color: 'white',
+                                    fontSize: '2rem',
+                                    cursor: 'pointer',
+                                }}
+                                onClick={closeSidebar}
+                            />
+                        </CloseIconWrap>
+                        {menuData.map((item, index) => (
+                            <SubMenu item={item} key={index} closeSidebar={closeSidebar} />
+                        ))}
+                        <ul className="mobile-nav__contact list-unstyled">
+                            <li>
+                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:info.charot@gmail.com">info.charot@gmail.com</a>
+                            </li>
+                            <li>
+                                <i className="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+251908686868">
+                                +251908686868</a>
+                            </li>
+                        </ul>
+                        <div className="mobile-nav__top">
+                            <div className="mobile-nav__social">
+                            <a href="https://t.me/YourGroupUsername" target="_blank" rel="noopener noreferrer">
+                                            <span className="fab fa-telegram-plane"></span></a>
+                                <a href="https://facebook.com/"><span className="fab fa-facebook-square"></span></a>
+                                <a href="https://pinterest.com/"><span className="fab fa-pinterest-p"></span></a>
+                                <a href="https://instagram.com/"><span className="fab fa-instagram"></span></a>
                             </div>
                         </div>
-                    </SidebarWrap>
-                </SidebarNav>
-            </>
-        </>
+                    </div>
+                </SidebarWrap>
+            </SidebarNav>
+        </div>
     );
 };
 

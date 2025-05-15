@@ -9,7 +9,7 @@ export default class ContactMap extends React.Component {
                     <div className="container">
                         <div className="row">
                             {/* Start Contact Page Bottom Map */}
-                            <div className="col-xl-6">
+                            <div className="col-xl-7">
                                 <div className="contact-page-bottom-map">
                                     <iframe
                                         title="Address"
@@ -21,7 +21,7 @@ export default class ContactMap extends React.Component {
                             {/* End Contact Page Bottom Map */}
 
                             {/* Start Contact Page Bottom Content */}
-                            <div className="col-xl-6">
+                            <div className="col-xl-5">
                                 <div className="contact-page-bottom__content">
                                     <div className="sec-title">
                                         <div className="sec-title__tagline">
@@ -31,8 +31,6 @@ export default class ContactMap extends React.Component {
                                         <h2 className="sec-title__title">Get In Touch</h2>
                                     </div>
                                     <div className="contact-page-bottom__content-img">
-                                        <img src={publicUrl+"assets/images/resources/contact-page-bottom-img.jpg"} alt="#" />
-
                                         <div className="contact-info">
                                             <ul>
                                                 <li>
@@ -40,33 +38,57 @@ export default class ContactMap extends React.Component {
                                                         <div className="icon-box">
                                                             <span className="icon-phone-call-1"></span>
                                                         </div>
-
                                                         <div className="content-box">
-                                                            <p> Tel : <a href="tel:12345615523">+ 123-4561-5523</a></p>
+                                                            <p>Phone Number :<br />
+                                                                <a href="tel:+251908686868">+251908 686868</a><br />
+                                                                <a href="tel:+251908676767">+251908 676767</a>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </li>
-
                                                 <li>
                                                     <div className="inner">
                                                         <div className="icon-box">
                                                             <span className="icon-message"></span>
                                                         </div>
-
                                                         <div className="content-box">
-                                                            <p> Email : <a href="mailto:yourmail@email.com">needhelp@company.com</a></p>
+                                                            <p>Email Address :<br />
+                                                                <a href="mailto:info.charot@gmail.com">info.charot@gmail.com</a>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </li>
-
                                                 <li>
                                                     <div className="inner">
                                                         <div className="icon-box">
                                                             <span className="icon-placeholder"></span>
                                                         </div>
-
                                                         <div className="content-box">
-                                                            <p>Add : Flat 20, Reynolds Neck</p>
+                                                            <p>Our Address :<br />
+                                                                Lebu,Foziyana Bldg, 4th Floor<br />
+                                                                Addis Ababa, Ethiopia
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div className="inner">
+                                                     
+                                                         <div className="icon-box">
+                                                    <span className="icon-back-in-time"></span>
+                                                </div>
+                                                        <div className="content-box">
+                                                            <p>Working Time :</p>
+                                                            <div style={{ display: 'flex', gap: '24px', marginTop: '4px' }}>
+                                                                <div style={{ minWidth: '120px' }}>
+                                                                    <div><strong>Monday to Friday</strong></div>
+                                                                    <div><strong>Saturday</strong></div>
+                                                                </div>
+                                                                <div>
+                                                                    <div>08:30 Am - 5:00 PM</div>
+                                                                    <div>08:30 Am - 12:00 PM</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>
