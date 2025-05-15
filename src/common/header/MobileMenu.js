@@ -160,15 +160,6 @@ const SubMenu = ({ item, closeSidebar }) => {
     );
 };
 
-const NavIcon = styled(Link)`
-    color: #123316;
-    font-size: 2rem;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-`;
-
 const MobileMenu = ({ className = "" }) => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -176,15 +167,15 @@ const MobileMenu = ({ className = "" }) => {
     const closeSidebar = () => setSidebar(false);
     return (
         <div className={className}>
-            <NavIcon to="#" style={{ justifyContent: 'flex-end' }}>
-                <AiOutlineBars onClick={showSidebar} />
-            </NavIcon>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', padding: '10px 20px 0 20px' }}>
+                <AiOutlineBars onClick={showSidebar} style={{ color: '#123316', fontSize: '2rem', cursor: 'pointer' }} />
+            </div>
             <Overlay sidebar={sidebar} onClick={closeSidebar} />
             <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>
                     <div className="mobile-nav__content">
                         <div className="logo-box">
-                            <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo.png"} width="155" alt="" /></Link>
+                            <Link to={process.env.PUBLIC_URL + `/`} aria-label="logo image"><img src={publicUrl+"assets/images/resources/logo.png"} width="135" alt="" /></Link>
                         </div>
                         <CloseIconWrap>
                             <AiIcons.AiOutlineClose
@@ -212,11 +203,18 @@ const MobileMenu = ({ className = "" }) => {
                         </ul>
                         <div className="mobile-nav__top">
                             <div className="mobile-nav__social">
-                            <a href="https://t.me/YourGroupUsername" target="_blank" rel="noopener noreferrer">
-                                            <span className="fab fa-telegram-plane"></span></a>
-                                <a href="https://facebook.com/"><span className="fab fa-facebook-square"></span></a>
-                                <a href="https://pinterest.com/"><span className="fab fa-pinterest-p"></span></a>
-                                <a href="https://instagram.com/"><span className="fab fa-instagram"></span></a>
+                                <a href="https://t.me/charotecodoors" target="_blank" rel="noopener noreferrer">
+                                    <span className="fab fa-telegram-plane"></span>
+                                </a>
+                                <a href="https://wa.me/251908686868" target="_blank" rel="noopener noreferrer">
+                                    <span className="fab fa-whatsapp"></span>
+                                </a>
+                                <a href="https://www.tiktok.com/@charot.eco.doors?_t=ZM-8uhQZluVwrH&_r=1" target="_blank" rel="noopener noreferrer">
+                                    <span className="fab fa-tiktok"></span>
+                                </a>
+                                <a href="https://web.facebook.com/people/Charot-Eco-Doors/pfbid02HKC258FgsG2t2mNm3fqNi78Ttzb3sdkqW7kL4Hkf8qZTciRmZTV9fLTiTwAjonBQl/?rdid=EYOU075vyYWKlYWe&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F15guT785js%2F%3F_rdc%3D1%26_rdr" target="_blank" rel="noopener noreferrer">
+                                    <span className="fab fa-facebook"></span>
+                                </a>
                             </div>
                         </div>
                     </div>

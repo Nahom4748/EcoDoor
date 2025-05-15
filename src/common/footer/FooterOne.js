@@ -102,7 +102,7 @@ export default class FooterOne extends React.Component {
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-twitter"></span></Link></li>
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-facebook"></span></Link></li>
                                                 <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-pinterest"></span></Link></li>
-                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-instagram"></span></Link></li>
+                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-instagram"></span></Link></li> 
                                             </ul>
                                             */}
                                             <ul class="social-links">
