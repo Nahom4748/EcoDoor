@@ -21,8 +21,8 @@ export default class HeaderThree extends React.Component {
 
                                         <div className="main-header-three__left">
                                             <div className="main-menu-box">
-                                                <MobileMenu />
-                                                <Nav />
+                                                <MobileMenu className="MobileMenu" />
+                                                <Nav className="Nav" />
                                             </div>
                                         </div>
 
