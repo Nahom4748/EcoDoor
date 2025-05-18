@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Nav from './Nav';
 import MobileMenu from './MobileMenu';
-import SearchButton from './SearchButton';
+// import SearchButton from './SearchButton';
 import LogoThree from './LogoThree';
 
 
