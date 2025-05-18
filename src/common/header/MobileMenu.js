@@ -85,7 +85,7 @@ const DropdownLink = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-    background-color: #3cab41;
+    background: linear-gradient(135deg, #3cab41 0%, #123316 100%);
     width: 300px;
     height: 100vh;
     position: fixed;
@@ -118,6 +118,17 @@ const CloseIconWrap = styled.div`
     align-items: center;
     width: 100%;
     padding: 10px 20px 0 0;
+`;
+
+const HamburgerButton = styled.div`
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
 `;
 
 const SubMenu = ({ item, closeSidebar }) => {
@@ -168,7 +179,9 @@ const MobileMenu = ({ className = "" }) => {
     return (
         <div className={className}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', padding: '10px 20px 0 20px' }}>
-                <AiOutlineBars onClick={showSidebar} style={{ color: '#123316', fontSize: '2rem', cursor: 'pointer' }} />
+                <HamburgerButton onClick={showSidebar}>
+                    <AiOutlineBars style={{ color: '#123316', fontSize: '2rem' }} />
+                </HamburgerButton>
             </div>
             <Overlay sidebar={sidebar} onClick={closeSidebar} />
             <SidebarNav sidebar={sidebar}>
