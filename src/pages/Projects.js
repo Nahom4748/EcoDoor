@@ -10,7 +10,7 @@ import ServiceOne from '../components/service/ServiceOne';
 import WorkProcessTwo from '../components/work-process/WorkProcessTwo';
 import WorkProcessOne from '../components/work-process/WorkProcessOne';
 
-const Team = () => {
+const Projects = () => {
     return (
         <>
             <HeaderThree />
@@ -27,4 +27,4 @@ const Team = () => {
     )
 }
 
-export default Team;
+export default Projects;
