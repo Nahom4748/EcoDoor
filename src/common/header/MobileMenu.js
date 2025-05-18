@@ -214,7 +214,7 @@ const MobileMenu = ({ className = "" }) => {
                                 +251908686868</a>
                             </li>
                         </ul> 
-                        {/* Mobile Social Media Links */}
+                        {/* Mobile Social Media Links during mobile view */}
                         <div className="mobile-nav__top">
                             <div className="mobile-nav__social">
                                 
@@ -230,7 +230,7 @@ const MobileMenu = ({ className = "" }) => {
                                 <a href="https://www.tiktok.com/@charot.eco.doors?_t=ZM-8uhQZluVwrH&_r=1" target="_blank" rel="noopener noreferrer">
                                     <span className="fab fa-tiktok"></span>
                                 </a>
-                                
+
                                 <a href="https://web.facebook.com/people/Charot-Eco-Doors/pfbid02HKC258FgsG2t2mNm3fqNi78Ttzb3sdkqW7kL4Hkf8qZTciRmZTV9fLTiTwAjonBQl/?rdid=EYOU075vyYWKlYWe&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F15guT785js%2F%3F_rdc%3D1%26_rdr" target="_blank" rel="noopener noreferrer">
                                     <span className="fab fa-facebook"></span>
                                 </a>
