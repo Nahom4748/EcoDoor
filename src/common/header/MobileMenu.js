@@ -214,7 +214,7 @@ const MobileMenu = ({ className = "" }) => {
                                 +251908686868</a>
                             </li>
                         </ul> 
-                        {/* Mobile Social Media Links during mobile view */}
+                        {/* Mobile Social Media Links during mobile view for better user experience */}
                         <div className="mobile-nav__top">
                             <div className="mobile-nav__social">
                                 
