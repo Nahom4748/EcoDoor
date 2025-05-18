@@ -96,15 +96,7 @@ export default class FooterOne extends React.Component {
 
                                         <div class="footer-one__right-bottom wow animated fadeInUp" data-wow-delay="0.1s">
                                             
-                                            {/* Previous social links commented out for reference */}
-                                            {/*
-                                            <ul class="social-links">
-                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-twitter"></span></Link></li>
-                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-facebook"></span></Link></li>
-                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-pinterest"></span></Link></li>
-                                                <li><Link to={process.env.PUBLIC_URL + `/`}><span class="icon-instagram"></span></Link></li> 
-                                            </ul>
-                                            */}
+                                        
                                             <ul class="social-links">
                                                 <li><a href="https://t.me/charotecodoors" target="_blank" rel="noopener noreferrer"><span class="fab fa-telegram-plane"></span></a></li>
                                                 <li><a href="https://wa.me/251908686868" target="_blank" rel="noopener noreferrer"><span class="fab fa-whatsapp"></span></a></li>
@@ -118,7 +110,7 @@ export default class FooterOne extends React.Component {
                                                     <span class="icon-phone-call"></span>
                                                 </div>
                                                 <div class="content-box">
-                                                    <p>Call Anytime</p>
+                                                    <p>Call Anytime, fell free!</p>
                                                     <h4><a href="tel:+251908686868">+25190-868-6868</a></h4>
                                                 </div>
                                             </div>
