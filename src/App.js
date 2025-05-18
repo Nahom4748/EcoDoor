@@ -8,7 +8,7 @@ import { FaAngleUp } from "react-icons/fa";
 import HomeDefault from "./pages/HomeDefault";
 import About from "./pages/About";
 import Service from "./pages/Service";
-import TeamDetails from "./pages/TeamDetails";
+// import TeamDetails from "./pages/TeamDetails";
 import MissionVision from "./pages/MissionVision.js";
 import Projects from './pages/Projects.js';
 import Contact from "./pages/Contact";
