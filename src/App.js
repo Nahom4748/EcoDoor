@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
-import WOW from 'wowjs';
+import WOW from "wowjs";
 import { FaAngleUp } from "react-icons/fa";
 
 //Pages
@@ -10,22 +10,21 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 // import TeamDetails from "./pages/TeamDetails";
 import MissionVision from "./pages/MissionVision.js";
-import Projects from './pages/Projects.js';
+import Projects from "./pages/Projects.js";
 import Contact from "./pages/Contact";
-import ScrollToTopRoute from './components/scroll-to-top-route/ScrollToTopRoute';
+import ScrollToTopRoute from "./components/scroll-to-top-route/ScrollToTopRoute";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
 
 function App() {
   useEffect(() => {
     new WOW.WOW({
-        live: false
-      }).init();
-    }, []
-  );
+      live: false,
+    }).init();
+  }, []);
   return (
     <Router>
       <ScrollToTopRoute />
