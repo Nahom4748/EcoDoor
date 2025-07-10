@@ -22,13 +22,13 @@ export default class ProjectThree extends React.Component {
               ],
               responsive: {
                 0: {
-                  items: 4,
+                  items: 1,
                 },
                 768: {
-                  items: 4,
+                  items: 2,
                 },
                 992: {
-                  items: 4,
+                  items: 3,
                 },
                 1200: {
                   items: 4,
@@ -42,7 +42,7 @@ export default class ProjectThree extends React.Component {
         let publicUrl = process.env.PUBLIC_URL+'/'
         return (
           <>
-            <section className="projects-three">
+            <section className="projects-three" style={{ overflow: "hidden", maxWidth: "100%" }}>
               <div
                 className="projects-three__bg"
                 style={{
