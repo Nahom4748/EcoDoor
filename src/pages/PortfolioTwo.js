@@ -8,14 +8,14 @@ import FooterOne from '../common/footer/FooterOne';
 const PortfolioTwo = () => {
     return (
         <>
-            <HeaderThree />
-            <Breadcrumb 
+            {/* <HeaderThree /> */}
+            {/* <Breadcrumb 
                 heading="Portfolio 02"
                 currentPage="Portfolio 02" 
-            />
+            /> */}
             <ProjectFive />
-            <PricingOne />
-            <FooterOne />
+            {/* <PricingOne /> */}
+            {/* <FooterOne /> */}
         </>
     )
 }

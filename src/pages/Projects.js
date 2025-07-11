@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderThree from '../common/header/HeaderThree';
+import HeaderTwo from '../common/header/HeaderTwo';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import TeamFour from '../components/team/TeamFour';
 import ExcellentWorkOne from '../components/excellent-work/ExcellentWorkOne';
@@ -13,7 +14,7 @@ import WorkProcessOne from '../components/work-process/WorkProcessOne';
 const Projects = () => {
     return (
         <>
-            <HeaderThree />
+            <HeaderTwo />
             <Breadcrumb 
                 heading="projects"
                 currentPage="projects" 

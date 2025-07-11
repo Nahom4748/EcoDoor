@@ -18,6 +18,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import 'swiper/css/effect-fade';
+import Products from './pages/Products.js';
 
 function App() {
   useEffect(() => {
@@ -57,6 +58,11 @@ function App() {
           path={`${process.env.PUBLIC_URL}/vision-mission`}
           exact
           element={<MissionVision />}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/products`}
+          exact
+          element={<Products />}
         />
 
         <Route

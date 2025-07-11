@@ -17,7 +17,7 @@ const Nav = () => {
                 <Link to={process.env.PUBLIC_URL + `/projects`}>Projects <span className=""></span></Link>
             </li>
             <li>
-                <Link to={process.env.PUBLIC_URL + `/vision-mission`}>Vision & Mission <span className=""></span></Link>
+                <Link to={process.env.PUBLIC_URL + `/Products`}>Our Products<span className=""></span></Link>
             </li>
             <li>
                 <Link to={process.env.PUBLIC_URL + `/contact`}>Contact <span className=""></span></Link>

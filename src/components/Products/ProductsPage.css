@@ -1,0 +1,124 @@
+.products-gallery {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Special grid items */
+.gallery-item.wide {
+  grid-column: span 2;
+}
+
+.gallery-item.tall {
+  grid-row: span 2;
+}
+
+/* Image Modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Horizontal Scroller */
+.gallery-scroller {
+  padding: 2rem 0;
+  background: #f8f9fa;
+}
+
+.swiper-scroller {
+  padding: 0 1rem;
+}
+
+.scroller-slide {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scroller-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Coverflow Carousel */
+.gallery-carousel {
+  padding: 4rem 0;
+}
+
+.gallery-carousel .swiper {
+  padding: 2rem 0;
+}
+
+.gallery-carousel .swiper-slide {
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.gallery-carousel .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+  }
+  
+  .gallery-carousel .swiper-slide {
+    width: 280px;
+    height: 200px;
+  }
+}
