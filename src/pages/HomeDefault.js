@@ -6,43 +6,43 @@ import ServiceOne from "../components/service/ServiceOne";
 import WorkProcessOne from "../components/work-process/WorkProcessOne";
 import FaqOne from "../components/faq/FaqOne";
 
-
-import FooterOne from '../common/footer/FooterOne';
+import FooterOne from "../common/footer/FooterOne";
 import HeaderTwo from "../common/header/HeaderTwo";
 import HeroTwo from "../components/hero/HeroTwo";
 import ServiceTwo from "../components/service/ServiceTwo";
 import AboutThree from "../components/about/AboutThree";
-import ServiceThree from "../components/service/ServiceThree";
+// import ServiceThree from "../components/service/ServiceThree";
 import ProjectThree from "../components/project/ProjectThree.js";
 import TeamTwo from "../components/team/TeamTwo.js";
 import TestimonialTwo from "../components/testimonial/TestimonialTwo.js";
 import OurCustomers from "../components/service/OurCustomers.js";
+import Unique from "../components/service/Unique.js";
 
 const HomeDefault = () => {
-    return (
-        <>
-            <HeaderTwo />
-            <HeroTwo />
-            <WhyChooseOne />
-        
-            <ServiceTwo/>
-            <AboutThree />
-            <ServiceThree />
-            
-            <ServiceOne />
-            {/* <ProjectOne /> */}
-            <ProjectThree/> 
-            <WorkProcessOne />
-            <OurCustomers />
-            <TeamTwo />
-            <FaqOne />
-            {/* <TestimonialOne /> */}
-            <TestimonialTwo />
-            {/* <ExcellentWorkOne /> */}
-            {/* <BlogOne /> */}
-            <FooterOne />
-        </>
-    )
-}
+  return (
+    <>
+      <HeaderTwo />
+      <HeroTwo />
+      <WhyChooseOne />
+
+      <ServiceTwo />
+      <AboutThree />
+      <Unique />
+
+      <ServiceOne />
+      {/* <ProjectOne /> */}
+      <ProjectThree />
+      <WorkProcessOne />
+      <OurCustomers />
+      <TeamTwo />
+      <FaqOne />
+      {/* <TestimonialOne /> */}
+      <TestimonialTwo />
+      {/* <ExcellentWorkOne /> */}
+      {/* <BlogOne /> */}
+      <FooterOne />
+    </>
+  );
+};
 
 export default HomeDefault;
