@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default class ServiceThree extends React.Component {
+export default class Unique extends React.Component {
   render() {
     let publicUrl = process.env.PUBLIC_URL + "/";
     return (
@@ -42,19 +42,18 @@ export default class ServiceThree extends React.Component {
             <div className="services-three__top">
               <div className="sec-title-three">
                 <div className="sec-title-three__tagline">
-                  <h6>Our Core Values</h6>
+                  <h6>What makes us unique?</h6>
                 </div>
                 <h2 className="sec-title-three__title">
-                  Built on Purpose. <br /> Guided by Values.{" "}
+                  Defined by <br /> Purpose and Values.
                 </h2>
               </div>
 
               <div className="services-three__top-text">
                 <p>
-                  {" "}
-                  At <strong>Charot Eco Doors</strong>, our mission goes beyond
-                  making doors. We stand for craftsmanship, sustainability, and
-                  integrity in every product and service we deliver.
+                  At <strong>Charot Eco Doors</strong>, our uniqueness comes
+                  from our strong values and clear purpose. We deliver products
+                  built with care, respect for the environment, and trust.
                 </p>
               </div>
             </div>
@@ -69,8 +68,8 @@ export default class ServiceThree extends React.Component {
                   <div className="shape1"></div>
                   <div className="services-three__single-icon">
                     <div className="inner">
-                      <span className="fas fa-tools"></span>{" "}
-                      {/* crafted with skill and care */}
+                      <span className="fas fa-tint"></span>{" "}
+                      {/* waterproof icon - droplet */}
                     </div>
 
                     <div className="icon">
@@ -81,12 +80,11 @@ export default class ServiceThree extends React.Component {
                   <div className="services-three__single-content">
                     <div className="title">
                       <h2>
-                        <Link>Crafted with Care</Link>
+                        <Link>Waterproof</Link>
                       </h2>
                     </div>
                     <p>
-                      We build every door with precision, detail, and pride in
-                      quality.
+                      Keeps water out to protect your stuff from getting wet.
                     </p>
 
                     <div className="bottom-box">
@@ -108,7 +106,8 @@ export default class ServiceThree extends React.Component {
                   <div className="shape1"></div>
                   <div className="services-three__single-icon">
                     <div className="inner">
-                      <span className="fas fa-leaf"></span> {/* leaf icon */}
+                      <span className="fas fa-volume-mute"></span>{" "}
+                      {/* soundproof icon */}
                     </div>
 
                     <div className="icon">
@@ -119,12 +118,10 @@ export default class ServiceThree extends React.Component {
                   <div className="services-three__single-content">
                     <div className="title">
                       <h2>
-                        <Link>Eco-Friendly</Link>
+                        <Link>Soundproof</Link>
                       </h2>
                     </div>
-                    <p>
-                      Sustainable materials and green practices are at our core.
-                    </p>
+                    <p>Blocks noise to make rooms quiet and calm.</p>
 
                     <div className="bottom-box">
                       <div className="count-box">
@@ -145,8 +142,8 @@ export default class ServiceThree extends React.Component {
                   <div className="shape1"></div>
                   <div className="services-three__single-icon">
                     <div className="inner">
-                      <span className="fas fa-user"></span>{" "}
-                      {/* customer icon */}
+                      <span className="fas fa-shield-alt"></span>{" "}
+                      {/* fire retardant */}
                     </div>
 
                     <div className="icon">
@@ -157,12 +154,10 @@ export default class ServiceThree extends React.Component {
                   <div className="services-three__single-content">
                     <div className="title">
                       <h2>
-                        <Link>Customer First</Link>
+                        <Link>Fire Retardant</Link>
                       </h2>
                     </div>
-                    <p>
-                      TWe listen, support, and deliver what matters most to you.
-                    </p>
+                    <p>Made to stop fires from spreading and keep you safe.</p>
 
                     <div className="bottom-box">
                       <div className="count-box">
@@ -183,8 +178,8 @@ export default class ServiceThree extends React.Component {
                   <div className="shape1"></div>
                   <div className="services-three__single-icon">
                     <div className="inner">
-                      <span className="fas fa-handshake"></span>{" "}
-                      {/* built on trust */}
+                      <span className="fas fa-vials"></span>{" "}
+                      {/* antibacterial */}
                     </div>
 
                     <div className="icon">
@@ -195,13 +190,10 @@ export default class ServiceThree extends React.Component {
                   <div className="services-three__single-content">
                     <div className="title">
                       <h2>
-                        <Link>Built on Trust</Link>
+                        <Link>AntiBacterial</Link>
                       </h2>
                     </div>
-                    <p>
-                      We’re honest, transparent, and committed to doing what’s
-                      right.
-                    </p>
+                    <p>Helps stop germs and keeps things clean and safe.</p>
 
                     <div className="bottom-box">
                       <div className="count-box">
