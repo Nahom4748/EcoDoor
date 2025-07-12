@@ -31,7 +31,7 @@ const HomeDefault = () => {
 
       <ServiceOne />
       {/* <ProjectOne /> */}
-      <ProjectThree />
+      {/* <ProjectThree /> */}
       <WorkProcessOne />
       <OurCustomers />
       <TeamTwo />

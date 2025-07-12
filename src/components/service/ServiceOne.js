@@ -66,11 +66,7 @@ export default class ServiceOne extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+            
                         <img
                           src={
                             publicUrl +
@@ -83,7 +79,6 @@ export default class ServiceOne extends React.Component {
                       <div className="services-one__single-content text-center">
                         <h2>
                           <Link
-                            to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
                             Waterproof{" "}
                           </Link>
@@ -141,11 +136,7 @@ export default class ServiceOne extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                     
                         <img
                           src={
                             publicUrl +
@@ -158,7 +149,6 @@ export default class ServiceOne extends React.Component {
                       <div className="services-one__single-content text-center">
                         <h2>
                           <Link
-                            to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
                             Soundproof{" "}
                           </Link>
@@ -216,11 +206,7 @@ export default class ServiceOne extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                       
                         <img
                           src={
                             publicUrl +
@@ -233,7 +219,6 @@ export default class ServiceOne extends React.Component {
                       <div className="services-one__single-content text-center">
                         <h2>
                           <Link
-                            to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
                             Fire Retardant{" "}
                           </Link>
@@ -291,11 +276,7 @@ export default class ServiceOne extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                  
                         <img
                           src={
                             publicUrl +
@@ -308,7 +289,7 @@ export default class ServiceOne extends React.Component {
                       <div className="services-one__single-content text-center">
                         <h2>
                           <Link
-                            to={process.env.PUBLIC_URL + `/arbor-management`}
+                            
                           >
                             Anti-Bacterial{" "}
                           </Link>

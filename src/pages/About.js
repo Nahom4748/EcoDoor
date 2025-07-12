@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderThree from '../common/header/HeaderThree';
+import HeaderTwo from '../common/header/HeaderTwo';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 
 import AboutThree from "../components/about/AboutThree";
@@ -14,11 +14,11 @@ import TeamTwo from "../components/team/TeamTwo";
 const About = () => {
     return (
         <>
-            <HeaderThree />
-            <Breadcrumb 
+            <HeaderTwo />
+            {/* <Breadcrumb 
                 heading="About Us"
                 currentPage="About Us" 
-            />
+            /> */}
             <AboutThree />
             <ServiceTwo />
             <TestimonialTwo />

@@ -86,7 +86,7 @@ export default class HeaderTwo extends React.Component {
 
                     {/* Start Main Header One Bottom */}
                     <div className="main-header-one__bottom">
-                        <div className="main-header-two__bottom-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/shapes/main-header-v2-bg.png)'}}></div>
+                        <div className="main-header-two__bottom-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/shapes/main-eader-v2-bg.png)'}}></div>
                         <div className="main-header-one__bottom-inner">
                             <nav className="main-menu main-menu-one">
                                 <div className="main-menu__wrapper clearfix">

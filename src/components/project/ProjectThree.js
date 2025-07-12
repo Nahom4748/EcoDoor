@@ -42,16 +42,9 @@ export default class ProjectThree extends React.Component {
         let publicUrl = process.env.PUBLIC_URL+'/'
         return (
           <>
+          <h1 className="d-none">Projects Three</h1>
             <section className="projects-three" style={{ overflow: "hidden", maxWidth: "100%" }}>
-              <div
-                className="projects-three__bg"
-                style={{
-                  backgroundImage:
-                    "url(" +
-                    publicUrl +
-                    "assets/images/backgrounds/projects-v3-bg.jpg)",
-                }}
-              ></div>
+            
               <div
                 className="projects-three__bg-two"
                 style={{

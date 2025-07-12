@@ -13,17 +13,12 @@ export default class ServiceTwo extends React.Component {
                   backgroundImage:
                     "url(" +
                     publicUrl +
-                    "assets/images/backgrounds/services-v2-bg.jpg)",
+                    "assets/E-DoorPhotos/five-five.jpg)",
                 }}
               ></div>
               <div
                 className="services-two__bg2"
-                style={{
-                  backgroundImage:
-                    "url(" +
-                    publicUrl +
-                    "assets/images/shapes/services-v2-shape22.png)",
-                }}
+                
               ></div>
               <div
                 className="shape1 wow slideInLeft"
