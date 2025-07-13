@@ -24,7 +24,12 @@ const HomeDefault = () => {
     <>
       <HeaderTwo />
       <HeroTwo />
+<<<<<<< HEAD
       <WhyChooseOne />
+=======
+      {/* <WhyChooseOne /> */}
+
+>>>>>>> f71f099e398d1d1c30c0bb4f42a54436e6e2a439
       <ServiceTwo />
       <AboutThree />
       <Unique />
