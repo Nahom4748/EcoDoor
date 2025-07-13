@@ -3270,9 +3270,9 @@ Main Slider Two
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgb(2, 128, 29);
+  /* background: rgb(2, 128, 29);
   background: linear-gradient(90deg, rgba(2, 128, 29, 0.6) 0%, rgba(2, 128, 29, 0.5) 31%, rgba(2, 128, 29, 0.4) 38%, rgba(2, 128, 29, 0.2) 60%, rgba(2, 128, 29, 0) 62%);
-  content: "";
+  content: ""; */
   z-index: -1;
 }
 

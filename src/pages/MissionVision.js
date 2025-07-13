@@ -8,11 +8,11 @@ import WorkProcessOne from "../components/work-process/WorkProcessOne";
 const MissionVision = () => {
   return (
     <>
-      <HeaderThree />
-      <Breadcrumb heading="Vision-mission" currentPage="Vision-mission" />
-      <MissionVisionTwo />  
-      <WorkProcessOne />
-      <FooterOne />
+      {/* <HeaderThree />
+      <Breadcrumb heading="Vision-mission" currentPage="Vision-mission" /> */}
+      <MissionVisionTwo />
+      {/* <WorkProcessOne />
+      <FooterOne /> */}
     </>
   );
 };
