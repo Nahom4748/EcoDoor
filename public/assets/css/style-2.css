@@ -1,10 +1,11 @@
 :root {
   --thm-gray: #878c8f;
   --thm-gray-rgb: 135, 140, 143;
-  --thm-base: #02801E;
+  --thm-base: #02801e;
   --thm-base-rgb: 60, 171, 65;
-  --thm-black: #8B4513;
+  --thm-black: #2e8b57;
   --thm-black-rgb: 11, 61, 44;
   --thm-primary: #0d4110;
   --thm-primary-rgb: 42, 125, 46;
+  --thm-white: #dddddd;
 }

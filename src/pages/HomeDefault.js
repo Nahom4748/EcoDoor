@@ -23,7 +23,7 @@ const HomeDefault = () => {
     <>
       <HeaderTwo />
       <HeroTwo />
-      <WhyChooseOne />
+      {/* <WhyChooseOne /> */}
 
       <ServiceTwo />
       <AboutThree />
