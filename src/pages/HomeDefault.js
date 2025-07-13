@@ -8,11 +8,12 @@ import FaqOne from "../components/faq/FaqOne";
 
 import FooterOne from "../common/footer/FooterOne";
 import HeaderTwo from "../common/header/HeaderTwo";
+import HeroOne from "../components/hero/HeroOne";
+
 import HeroTwo from "../components/hero/HeroTwo";
 import ServiceTwo from "../components/service/ServiceTwo";
 import AboutThree from "../components/about/AboutThree";
 // import ServiceThree from "../components/service/ServiceThree";
-import ProjectThree from "../components/project/ProjectThree.js";
 import TeamTwo from "../components/team/TeamTwo.js";
 import TestimonialTwo from "../components/testimonial/TestimonialTwo.js";
 import OurCustomers from "../components/service/OurCustomers.js";
@@ -24,7 +25,6 @@ const HomeDefault = () => {
       <HeaderTwo />
       <HeroTwo />
       <WhyChooseOne />
-
       <ServiceTwo />
       <AboutThree />
       <Unique />

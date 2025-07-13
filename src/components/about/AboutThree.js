@@ -38,7 +38,7 @@ export default class AboutThree extends React.Component {
               backgroundImage:
                 "url(" +
                 publicUrl +
-                "assets/images/backgrounds/about-v3-bg.png)",
+                "assets/E-DoorPhotos/five.jpg )",
             }}
           ></div>
           <div className="container">
@@ -72,7 +72,7 @@ export default class AboutThree extends React.Component {
               {/* End About Three Counter */}
 
               {/* Start About Three Img */}
-              <div className="col-xl-4 col-lg-5 col-md-7">
+              <div className="col-xl-4 col-lg-5 col-md-7 ">
                 <div className="about-three__img">
                   <div className="about-three__img-shape1">
                     <img
@@ -82,9 +82,9 @@ export default class AboutThree extends React.Component {
                       alt="#"
                     />
                   </div>
-                  <div className="inner">
+                  <div className="inner ">
                     <img
-                      src={publicUrl + "assets/images/about/about-v3-img1.jpg"}
+                      src={publicUrl + "assets/E-DoorPhotos/telegram.jpg"}
                       alt="#"
                     />
                   </div>
