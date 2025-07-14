@@ -12,22 +12,14 @@ export default class ServiceThree extends React.Component {
             data-wow-delay="100ms"
             data-wow-duration="2500ms"
           >
-            <img
-              className="float-bob-y"
-              src={publicUrl + "assets/images/shapes/services-v3-shape1.png"}
-              alt="#"
-            />
+        
           </div>
           <div
             className="shape3 wow slideInRight"
             data-wow-delay="100ms"
             data-wow-duration="2500ms"
           >
-            <img
-              className="float-bob-y"
-              src={publicUrl + "assets/images/shapes/services-v3-shape2.png"}
-              alt="#"
-            />
+           
           </div>
           <div
             className="services-three__bg"
@@ -35,7 +27,7 @@ export default class ServiceThree extends React.Component {
               backgroundImage:
                 "url(" +
                 publicUrl +
-                "assets/images/backgrounds/services-v3-bg.jpg)",
+                "assets//E-DoorPhotos/five.jpg)",
             }}
           ></div>
           <div className="container">

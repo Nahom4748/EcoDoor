@@ -2270,8 +2270,8 @@ Main Header Two
 .main-header-two__top-contact-info li {
   position: relative;
   display: inline-block;
-  margin-left: 30px;
-  padding-right: 36px;
+  margin-left: 05px;
+  padding-right: 12px;
 }
 
 .main-header-two__top-contact-info li::before {
@@ -9427,6 +9427,7 @@ Services Three
 
 .services-three__bg::before {
   position: absolute;
+  opacity: 0.92;
   top: 0;
   left: 0;
   bottom: 0;
