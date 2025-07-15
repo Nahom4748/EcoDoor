@@ -2463,7 +2463,8 @@ Main Header Two
 .main-header-two .main-menu .main-menu__list>li:hover>a,
 .stricky-header.stricky-header--two .main-menu__list>li.current>a,
 .stricky-header.stricky-header--two .main-menu__list>li:hover>a {
-  color: var(--thm-base);
+  /* color: var(--thm-base); */
+  color:yellow
 }
 
 .main-header-two
