@@ -63,11 +63,7 @@ export default class OurCustomers extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                  
                         <img
                           src={
                             publicUrl +
@@ -138,11 +134,7 @@ export default class OurCustomers extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                  
                         <img
                           src={
                             publicUrl +
@@ -213,11 +205,7 @@ export default class OurCustomers extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div>
+                     
                         <img
                           src={
                             publicUrl +
@@ -288,11 +276,11 @@ export default class OurCustomers extends React.Component {
                               "assets/images/shapes/services-v1-shape1.png)",
                           }}
                         ></div>
-                        <div className="overlay-icon">
+                        {/* <div className="overlay-icon">
                           <div className="icon-box">
                             <span className="icon-gardening-1"></span>
                           </div>
-                        </div>
+                        </div> */}
                         <img
                           src={
                             publicUrl +
@@ -307,7 +295,7 @@ export default class OurCustomers extends React.Component {
                           <Link
                             to={process.env.PUBLIC_URL + `/arbor-management`}
                           >
-                            HomeownersHomeowners{" "}
+                            Home owners{" "}
                           </Link>
                         </h2>
                         <p>

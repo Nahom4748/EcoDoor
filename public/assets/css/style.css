@@ -1278,6 +1278,7 @@ a.sc-hLBbgP {
 .mobile-nav__content .main-menu__list>li>ul>li>ul>li>a>button {
   width: 30px;
   height: 30px;
+  
   background-color: var(--thm-black);
   border: none;
   outline: none;
@@ -2442,7 +2443,8 @@ Main Header Two
 .main-header-two .main-menu .main-menu__list>li:hover>a,
 .stricky-header.stricky-header--two .main-menu__list>li.current>a,
 .stricky-header.stricky-header--two .main-menu__list>li:hover>a {
-  color: var(--thm-base);
+  /* color: var(--thm-base); */
+  color: #ecdd08;
 }
 
 
@@ -3290,9 +3292,15 @@ Main Slider Two
 .main-slider-two__content {
   position: relative;
   display: block;
-  padding: 200px 0px 150px;
+  padding: 60px 0px 150px;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .main-slider-two__content {
+    padding: 40px 0px 100px; /* Reduced top & bottom padding for smaller screens */
+  }
+}
+
 
 .main-slider-two__content .tagline {
   position: relative;
@@ -3339,13 +3347,18 @@ Main Slider Two
 }
 
 .main-slider-two__content .tagline p {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 30px;
+  color: #02801e;
+  font-size: clamp(14px, 2.5vw, 20px); /* Responsive font size */
+  line-height: 1.6;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Improves readability over background image */
+  font-family: 'Poppins', sans-serif; /* Optional: modern font if available */
+  position: relative;
+  z-index: 2; /* Ensure it stays above the background image */
 }
+
 
 .main-slider-two__content .title {
   position: relative;
@@ -3367,11 +3380,14 @@ Main Slider Two
 
 
 .main-slider-two__content .title h2 {
-  color: #ffffff;
-  font-size: 80px;
-  line-height: 1.2em;
-  font-weight: 400;
+  color: #ffffff; /* Clean modern white */
+  font-size: clamp(32px, 6vw, 80px);
+  line-height: 1.2;
+  font-weight: 600; /* Slightly stronger for readability */
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Adds contrast over images */
 }
+
 
 .main-slider-two__content .btn-box {
   position: relative;
@@ -4522,7 +4538,7 @@ Services One
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 120px 0px 90px;
+  padding: 15px 0px 80px;
   z-index: 1;
 }
 
@@ -4984,7 +5000,7 @@ Work Process One
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 120px 0px 90px;
+  padding: 10px 0px 90px;
   counter-reset: count;
   z-index: 1;
 }
@@ -9797,7 +9813,7 @@ Faq Two
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 235px 0px 120px;
+  padding: 28px 0px 120px;
   margin-top: -115px;
   overflow: hidden;
   z-index: 1;
@@ -9942,7 +9958,7 @@ Faq Two
 
 .faq-two__content-bottom .experience-box {
   position: absolute;
-  top: -13px;
+  top: 19px;
   left: 0;
   right: 0;
   display: flex;
@@ -13041,3 +13057,4 @@ Testimonials Three Team
 End Css 
 =====================================================
 ***/
+

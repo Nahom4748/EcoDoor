@@ -152,7 +152,7 @@ export default class MissionVisionModern extends React.Component {
             position: relative;
             padding: 120px 0;
             overflow: hidden;
-            background:rgba(67, 179, 101, 0.44);
+            background:rgba(227, 240, 231, 0.44);
             color: ${darkGreen};
           }
           

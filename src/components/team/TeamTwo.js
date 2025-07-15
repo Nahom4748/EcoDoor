@@ -7,24 +7,14 @@ export default class TeamTwo extends React.Component {
         return (
           <>
             <section className="team-two">
-              <div className="shape1 float-bob-y">
-                <img
-                  src={publicUrl + "assets/images/shapes/team-v2-shape1.png"}
-                  alt="#"
-                />
-              </div>
-              <div className="shape2 float-bob-y">
-                <img
-                  src={publicUrl + "assets/images/shapes/team-v2-shape2.png"}
-                  alt="#"
-                />
-              </div>
+             
+           
               <div className="container">
                 <div className="sec-title-three text-center">
                   <div className="sec-title-three__tagline">
                     <h6>Our Team</h6>
                   </div>
-                  <h2 className="sec-title-three__title">Our expert members</h2>
+                  <h2 className="sec-title-three__title">Our Recent Projects</h2>
                 </div>
                 <div className="row">
                   {/* Start Team Two Single */}

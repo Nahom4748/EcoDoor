@@ -15,10 +15,9 @@ export default class ServiceOne extends React.Component {
                     <h6>Exceptional Product Features</h6>
                     <span className="right"></span>
                   </div>
-                  <h5 className="sec-title__title">
-                    Our WPC products are distinguished by these characteristic
-                    features that set them apart from traditional materials.
-                  </h5>
+               <h2 className="sec-title_e">
+  Discover the benefits of our eco-friendly doors.
+</h2>
                 </div>
 
                 <div className="row">
