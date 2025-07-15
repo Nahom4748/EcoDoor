@@ -24,19 +24,18 @@ const HomeDefault = () => {
     <>
       <HeaderTwo />
       <HeroTwo />
-      <WhyChooseOne />
       {/* <WhyChooseOne /> */}
 
-      <ServiceTwo />
-      <AboutThree />
+      {/* <ServiceTwo /> */}
+      {/* <AboutThree /> */}
       <Unique />
 
-      <ServiceOne />
+      {/* <ServiceOne /> */}
       {/* <ProjectOne /> */}
       {/* <ProjectThree /> */}
-      <WorkProcessOne />
+      {/* <WorkProcessOne /> */}
       <OurCustomers />
-      <TeamTwo />
+      {/* <TeamTwo /> */}
       <FaqOne />
       {/* <TestimonialOne /> */}
       <TestimonialTwo />
