@@ -9,8 +9,8 @@
 }
 
 .products-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg') center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../public/assets/Product/photo_19.jpg") center/cover;
   padding: 6rem 0;
   position: relative;
 }
@@ -32,11 +32,11 @@
   .products-hero {
     padding: 4rem 0;
   }
-  
+
   .products-hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .products-hero p {
     font-size: 1rem;
   }
