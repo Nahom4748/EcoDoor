@@ -8,16 +8,18 @@ import 'swiper/css/free-mode';
 import "./ProductsPage.css"
 
 const ProductsGallery = () => {
+          let publicUrl = process.env.PUBLIC_URL+'/'
+
   // Product data with placeholder images
   const products = [
-    { id: 1, image: "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg" },
-    { id: 2, image: "https://images.pexels.com/photos/221026/pexels-photo-221026.jpeg" },
-    { id: 3, image: "https://images.pexels.com/photos/3076899/pexels-photo-3076899.jpeg" },
-    { id: 4, image: "https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg" },
-    { id: 5, image: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg" },
-    { id: 6, image: "https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg" },
-    { id: 7, image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" },
-    { id: 8, image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" }
+    { id: 1, image: publicUrl+"assets/images/product/pro01.jpg" },
+    { id: 2, image: publicUrl+"assets/images/product/pro02.jpg" },
+    { id: 3, image: publicUrl+"assets/images/product/pro03.jpg" },
+    { id: 4, image:  publicUrl+"assets/images/product/pro04.jpg" },
+    { id: 5, image: publicUrl+"assets/images/product/pro05.jpg" },
+    { id: 6, image: publicUrl+"assets/images/product/pro06.jpg" },
+    { id: 7, image: publicUrl+"assets/images/product/pro07.jpg" },
+    { id: 8, image: publicUrl+"assets/images/product/pro08.jpg"}
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
