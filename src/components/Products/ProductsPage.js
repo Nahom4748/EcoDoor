@@ -8,6 +8,8 @@ import "swiper/css/free-mode";
 import "./ProductsPage.css";
 
 const ProductsGallery = () => {
+          let publicUrl = process.env.PUBLIC_URL+'/'
+
   // Product data with placeholder images
   const products = [
     { id: 1, image: "/assets/Product/photo_2.jpg" },
@@ -39,6 +41,14 @@ const ProductsGallery = () => {
       id: 8,
       image: "/assets/Product/photo_18.jpg",
     },
+    { id: 1, image: publicUrl+"assets/images/product/pro01.jpg" },
+    { id: 2, image: publicUrl+"assets/images/product/pro02.jpg" },
+    { id: 3, image: publicUrl+"assets/images/product/pro03.jpg" },
+    { id: 4, image:  publicUrl+"assets/images/product/pro04.jpg" },
+    { id: 5, image: publicUrl+"assets/images/product/pro05.jpg" },
+    { id: 6, image: publicUrl+"assets/images/product/pro06.jpg" },
+    { id: 7, image: publicUrl+"assets/images/product/pro07.jpg" },
+    { id: 8, image: publicUrl+"assets/images/product/pro08.jpg"}
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
