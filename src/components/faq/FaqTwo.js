@@ -45,7 +45,7 @@ export default class FaqTwo extends React.Component {
                 <section className="faq-two">
                    <div className="sec-title-three text-center">
                   <div className="sec-title-three__tagline">
-                    <h6>Our FAQ</h6>
+                    <h6>FAQ</h6>
                   </div>
                      {/* <h5 className="sec-title__title">Our Frequently Asked Question</h5> */}
                   <h2 className="sec-title-three__title">Our Frequently Asked Question</h2>
