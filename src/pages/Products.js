@@ -19,7 +19,7 @@ const Products = () => {
       
       <main className="products-main">
         {/* Hero Section */}
-        <section className="products-hero bg-dark text-white py-5">
+        {/* <section className="products-hero bg-dark text-white py-5">
           <div className="container">
             <motion.div
               initial="hidden"
@@ -33,7 +33,7 @@ const Products = () => {
               </p>
             </motion.div>
           </div>
-        </section>
+        </section> */}
 
         {/* Main Products Content */}
         <ProductsPage />

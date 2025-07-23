@@ -43,12 +43,12 @@ export default class TestimonialTwo extends React.Component {
             <>
                 <section className="testimonilas-two">
                     <div className="testimonilas-two__pattern" style={{backgroundImage: 'url('+publicUrl+'assets/images/pattern/testimonilas-v2-pattern.png)'}}></div>
-                    <div className="testimonilas-two__bg" style={{backgroundImage: 'url('+publicUrl+'assets//E-DoorPhotos/fream.jpg)'}}></div>
+                    <div className="testimonilas-two__bg" style={{backgroundImage: 'url('+publicUrl+'assets//E-DoorPhotos/footer1.JPG)'}}></div>
                     <div className="container">
 
                         <div className="sec-title style2">
                             <div className="sec-title__tagline">
-                                <div className="img-box"><img src={publicUrl+"assets/images/resources/sec-title-img2.png"} alt="#" /></div>
+                              
                                 <h6>Our Testimonilas</h6>
                             </div>
                             <h2 className="sec-title__title">
@@ -72,9 +72,7 @@ export default class TestimonialTwo extends React.Component {
                                             <div className="testimonilas-two__single-bottom">
                                                 <div className="left-box">
                                                     <div className="img-box">
-                                                        <div className="inner">
-                                                            <img src={publicUrl+"assets/images/testimonial/testimonial-v2-img1.jpg"} alt="#" />
-                                                        </div>
+                                                        
                                                         <div className="icon-box">
                                                             <span className="icon-quote-1"></span>
                                                         </div>
@@ -101,9 +99,7 @@ export default class TestimonialTwo extends React.Component {
                                             <div className="testimonilas-two__single-bottom">
                                                 <div className="left-box">
                                                     <div className="img-box">
-                                                        <div className="inner">
-                                                            <img src={publicUrl+"assets/images/testimonial/testimonial-v2-img2.jpg"} alt="#" />
-                                                        </div>
+                                                      
                                                         <div className="icon-box">
                                                             <span className="icon-quote-1"></span>
                                                         </div>
@@ -133,9 +129,7 @@ export default class TestimonialTwo extends React.Component {
                                             <div className="testimonilas-two__single-bottom">
                                                 <div className="left-box">
                                                     <div className="img-box">
-                                                        <div className="inner">
-                                                            <img src={publicUrl+"assets/images/testimonial/testimonial-v2-img1.jpg"} alt="#" />
-                                                        </div>
+                                                       
                                                         <div className="icon-box">
                                                             <span className="icon-quote-1"></span>
                                                         </div>

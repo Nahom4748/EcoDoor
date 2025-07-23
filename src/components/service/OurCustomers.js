@@ -27,31 +27,13 @@ export default class OurCustomers extends React.Component {
               >
                 <div className="services-one__single">
                   <div className="shape1">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape2.png"
-                      }
-                      alt="#"
-                    />
+                  
                   </div>
                   <div className="shape2">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape3.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="shape3">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape4.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="services-one__single-img">
                     <div
@@ -67,7 +49,7 @@ export default class OurCustomers extends React.Component {
                     <img
                       src={
                         publicUrl +
-                        "assets/images/services/services-v1-img1.jpg"
+                        "assets/images/services/real1.jpg"
                       }
                       alt="#"
                     />
@@ -75,7 +57,7 @@ export default class OurCustomers extends React.Component {
 
                   <div className="services-one__single-content text-center">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/arbor-management`}>
+                      <Link to={process.env.PUBLIC_URL + `/products`}>
                         Real Estate{" "}
                       </Link>
                     </h2>
@@ -88,39 +70,20 @@ export default class OurCustomers extends React.Component {
               </div>
               {/* End Services One Single */}
 
-              {/* Start Services One Single */}
               <div
                 className="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft"
-                data-wow-delay="100ms"
+                data-wow-delay="0ms"
                 data-wow-duration="1000ms"
               >
                 <div className="services-one__single">
                   <div className="shape1">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape2.png"
-                      }
-                      alt="#"
-                    />
+                  
                   </div>
                   <div className="shape2">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape3.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="shape3">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape4.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="services-one__single-img">
                     <div
@@ -136,15 +99,14 @@ export default class OurCustomers extends React.Component {
                     <img
                       src={
                         publicUrl +
-                        "assets/images/services/services-v1-img2.jpg"
+                        "assets/images/services/hotel2.jpg"
                       }
                       alt="#"
                     />
                   </div>
-
-                  <div className="services-one__single-content text-center">
+                    <div className="services-one__single-content text-center">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/arbor-management`}>
+                      <Link to={process.env.PUBLIC_URL + `/products`}>
                         Hotels{" "}
                       </Link>
                     </h2>
@@ -155,32 +117,19 @@ export default class OurCustomers extends React.Component {
                   </div>
                 </div>
               </div>
-              {/* End Services One Single */}
 
               {/* Start Services One Single */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInRight"
+         <div
+                className="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft"
                 data-wow-delay="0ms"
                 data-wow-duration="1000ms"
               >
                 <div className="services-one__single">
                   <div className="shape1">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape2.png"
-                      }
-                      alt="#"
-                    />
+                  
                   </div>
                   <div className="shape2">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape3.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="shape3">
                     <img
@@ -205,15 +154,15 @@ export default class OurCustomers extends React.Component {
                     <img
                       src={
                         publicUrl +
-                        "assets/images/services/services-v1-img3.jpg"
+                        "assets/images/services/office01.jpg"
                       }
                       alt="#"
                     />
                   </div>
-
+                
                   <div className="services-one__single-content text-center">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/arbor-management`}>
+                      <Link to={process.env.PUBLIC_URL + `/products`}>
                         Office Buildings{" "}
                       </Link>
                     </h2>
@@ -227,29 +176,19 @@ export default class OurCustomers extends React.Component {
               {/* End Services One Single */}
 
               {/* Start Services One Single */}
-              <div
-                className="col-xl-3 col-lg-6 col-md-6 wow fadeInRight"
-                data-wow-delay="100ms"
+              
+              {/* End Services One Single */}
+<div
+                className="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft"
+                data-wow-delay="0ms"
                 data-wow-duration="1000ms"
               >
                 <div className="services-one__single">
                   <div className="shape1">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape2.png"
-                      }
-                      alt="#"
-                    />
+                  
                   </div>
                   <div className="shape2">
-                    <img
-                      src={
-                        publicUrl +
-                        "assets/images/shapes/services-v1-shape3.png"
-                      }
-                      alt="#"
-                    />
+                    
                   </div>
                   <div className="shape3">
                     <img
@@ -270,23 +209,19 @@ export default class OurCustomers extends React.Component {
                           "assets/images/shapes/services-v1-shape1.png)",
                       }}
                     ></div>
-                    {/* <div className="overlay-icon">
-                          <div className="icon-box">
-                            <span className="icon-gardening-1"></span>
-                          </div>
-                        </div> */}
+
                     <img
                       src={
                         publicUrl +
-                        "assets/images/services/services-v1-img4.jpg"
+                        "assets/images/services/home1.jpg"
                       }
                       alt="#"
                     />
                   </div>
-
+                
                   <div className="services-one__single-content text-center">
                     <h2>
-                      <Link to={process.env.PUBLIC_URL + `/arbor-management`}>
+                      <Link to={process.env.PUBLIC_URL + `/products`}>
                         Home owners{" "}
                       </Link>
                     </h2>
@@ -296,6 +231,8 @@ export default class OurCustomers extends React.Component {
                   </div>
                 </div>
               </div>
+              {/* Start Services One Single */}
+              
               {/* End Services One Single Our Customers */}
             </div>
           </div>
