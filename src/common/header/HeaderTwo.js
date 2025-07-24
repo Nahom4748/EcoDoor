@@ -136,19 +136,7 @@ export default class HeaderTwo extends React.Component {
                         </div>
                       </div>
 
-                      <div className="main-header-one__bottom-right">
-                        <div className="header-search-box">
-                          <a
-                            href="#"
-                            className="main-menu__search search-toggler icon-magnifying-glass"
-                          ></a>
-                        </div>
-                        <div className="main-header-one__bottom-right-btn">
-                          <Link to={process.env.PUBLIC_URL + `/contact`}>
-                            Book Appointment
-                          </Link>
-                        </div>
-                      </div>
+                    
                     </div>
                   </div>
                 </div>
