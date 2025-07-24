@@ -4,80 +4,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FiZoomIn, FiHeart, FiShare2, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiZoomIn, FiHeart, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import "./ProductsPage.css";
 
 const ProductsGallery = () => {
   const publicUrl = process.env.PUBLIC_URL + '/';
 
-  // Enhanced product data with consistent aspect ratio (4:3)
+  // Product data with only images
   const products = [
-    { 
-      id: 1, 
-      image: "/assets/Product/photo_2.jpg",
-      title: "Modern Oak Door",
-     
-    },
-    {
-      id: 2,
-      image: "/assets/Product/photo_17.jpg",
-      title: "Glass Panel Design",
-      category: "Patio Doors",
-      price: "$599"
-    },
-    {
-      id: 3,
-      image: "/assets/Product/photo_9.jpg",
-      title: "Rustic Barn Door",
-      category: "Sliding Doors",
-      price: "$649"
-    },
-    {
-      id: 4,
-      image: "/assets/Product/photo_16.jpg",
-      title: "Minimalist Black",
-      category: "Front Doors",
-      price: "$549"
-    },
-    {
-      id: 5,
-      image: "/assets/Product/photo_12.jpg",
-      title: "French Patio Doors",
-      category: "Double Doors",
-      price: "$1,299"
-    },
-    {
-      id: 6,
-      image: "/assets/Product/photo_7.jpg",
-      title: "Traditional Panel",
-      category: "Interior Doors",
-      price: "$429"
-    },
-    {
-      id: 7,
-      image: "/assets/Product/photo_8.jpg",
-      title: "Industrial Steel",
-      category: "Commercial Doors",
-      price: "$799"
-    },
-    {
-      id: 8,
-      image: "/assets/Product/photo_18.jpg",
-      title: "Custom Carved",
-      category: "Artisan Doors",
-      price: "$899"
-    }
+    { id: 1, image: "/assets/Product/photo_2.jpg" },
+    { id: 2, image: "/assets/Product/photo_17.jpg" },
+    { id: 3, image: "/assets/Product/photo_9.jpg" },
+    { id: 4, image: "/assets/Product/photo_16.jpg" },
+    { id: 5, image: "/assets/Product/photo_12.jpg" },
+    { id: 6, image: "/assets/Product/photo_7.jpg" },
+    { id: 7, image: "/assets/Product/photo_8.jpg" },
+    { id: 8, image: "/assets/Product/photo_18.jpg" }
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const [favorites, setFavorites] = useState([]);
-  const [activeFilter, setActiveFilter] = useState("All");
-  
-  const categories = ["All", ...new Set(products.map(p => p.category))];
-  const filteredProducts = activeFilter === "All" 
-    ? products 
-    : products.filter(p => p.category === activeFilter);
 
   // Animation variants
   const fadeIn = {
@@ -112,19 +58,6 @@ const ProductsGallery = () => {
         </motion.div>
       </section>
 
-      {/* Filter Controls */}
-      <div className="filter-controls">
-        {categories.map(category => (
-          <button
-            key={category}
-            className={activeFilter === category ? "active" : ""}
-            onClick={() => setActiveFilter(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
-
       {/* Main Gallery Grid */}
       <motion.div
         className="gallery-grid"
@@ -132,7 +65,7 @@ const ProductsGallery = () => {
         initial="hidden"
         animate="visible"
       >
-        {filteredProducts.map(product => (
+        {products.map(product => (
           <motion.div
             key={product.id}
             className="gallery-item"
@@ -142,16 +75,13 @@ const ProductsGallery = () => {
             <div className="image-container">
               <img
                 src={product.image}
-                alt={product.title}
+                alt=""
                 loading="lazy"
               />
               <div className="image-overlay">
                 <button 
                   className="zoom-btn"
-                  onClick={() => {
-                    setSelectedImage(product.image);
-                    setSelectedProduct(product);
-                  }}
+                  onClick={() => setSelectedImage(product.image)}
                 >
                   <FiZoomIn />
                 </button>
@@ -170,7 +100,6 @@ const ProductsGallery = () => {
                 </button>
               </div>
             </div>
-           
           </motion.div>
         ))}
       </motion.div>
@@ -196,11 +125,10 @@ const ProductsGallery = () => {
           }}
           className="featured-carousel"
         >
-          {products.filter(p => p.price > "$500").map(product => (
+          {products.map(product => (
             <SwiperSlide key={`featured-${product.id}`}>
               <div className="featured-item">
-                <img src={product.image} alt={product.title} />
-                
+                <img src={product.image} alt="" />
               </div>
             </SwiperSlide>
           ))}
@@ -211,16 +139,13 @@ const ProductsGallery = () => {
 
       {/* Image Modal */}
       <AnimatePresence>
-        {selectedImage && selectedProduct && (
+        {selectedImage && (
           <motion.div
             className="image-modal"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => {
-              setSelectedImage(null);
-              setSelectedProduct(null);
-            }}
+            onClick={() => setSelectedImage(null)}
           >
             <motion.div 
               className="modal-content"
@@ -231,19 +156,11 @@ const ProductsGallery = () => {
             >
               <button 
                 className="close-btn"
-                onClick={() => {
-                  setSelectedImage(null);
-                  setSelectedProduct(null);
-                }}
+                onClick={() => setSelectedImage(null)}
               >
                 <FiX />
               </button>
-              
-              <div className="modal-image">
-                <img src={selectedImage} alt={selectedProduct.title} />
-              </div>
-              
-            
+              <img src={selectedImage} alt="" />
             </motion.div>
           </motion.div>
         )}

@@ -22,6 +22,14 @@ const menuData = [
         iconClosed: <CgChevronLeft />,
         iconOpened: <CgChevronDown />,
     },
+    
+    {
+        title: 'Products',
+        path: '/products',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+
     {
         title: 'Projects',
         path: '/projects',
