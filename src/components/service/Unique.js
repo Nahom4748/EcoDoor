@@ -61,20 +61,21 @@ export default class Unique extends React.Component {
               className="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp"
               data-wow-delay="0.1s"
             >
-              <div className="services-three__single">
-                <div className="shape1"></div>
-                <div className="services-three__single-icon">
-                  <div className="inner">
-                    <span className="fas fa-tint"></span>
-                  </div>
-                  <div className="icon">
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="services-three__single-content">
+              <div
+                className="services-three__single"
+                style={{
+                  backgroundImage: `url(${publicUrl}assets/images/services/unique/water-proof.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  borderRadius: "16px",
+                  boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+                }}
+              >
+                {/* Removed the white circle overlay */}
+                <div className="services-three__single-content" style={{ color: '#fff' }}>
                   <div className="title">
-                    <h2>
-                      <Link to="#">Waterproof</Link>
+                    <h2 style={{ color: '#fff' }}>
+                      <Link to="#" style={{ color: '#fff' }}>Waterproof</Link>
                     </h2>
                   </div>
                   <p>Keeps water out to protect your stuff from getting wet.</p>
@@ -92,20 +93,21 @@ export default class Unique extends React.Component {
               className="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp"
               data-wow-delay="0.2s"
             >
-              <div className="services-three__single">
-                <div className="shape1"></div>
-                <div className="services-three__single-icon">
-                  <div className="inner">
-                    <span className="fas fa-volume-mute"></span>
-                  </div>
-                  <div className="icon">
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="services-three__single-content">
+              <div
+                className="services-three__single"
+                style={{
+                  backgroundImage: `url(${publicUrl}assets/images/services/unique/sound-proof.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  borderRadius: "16px",
+                  boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+                }}
+              >
+                {/* Removed the white circle overlay */}
+                <div className="services-three__single-content" style={{ color: '#fff' }}>
                   <div className="title">
-                    <h2>
-                      <Link to="#">Soundproof</Link>
+                    <h2 style={{ color: '#fff' }}>
+                      <Link to="#" style={{ color: '#fff' }}>Soundproof</Link>
                     </h2>
                   </div>
                   <p>Blocks noise to make rooms quiet and calm.</p>
@@ -123,20 +125,21 @@ export default class Unique extends React.Component {
               className="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp"
               data-wow-delay="0.3s"
             >
-              <div className="services-three__single">
-                <div className="shape1"></div>
-                <div className="services-three__single-icon">
-                  <div className="inner">
-                    <span className="fas fa-shield-alt"></span>
-                  </div>
-                  <div className="icon">
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="services-three__single-content">
+              <div
+                className="services-three__single"
+                style={{
+                  backgroundImage: `url(${publicUrl}assets/images/services/unique/fire-retardant.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  borderRadius: "16px",
+                  boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+                }}
+              >
+                {/* Removed the white circle overlay */}
+                <div className="services-three__single-content" style={{ color: '#fff' }}>
                   <div className="title">
-                    <h2>
-                      <Link to="#">Fire Retardant</Link>
+                    <h2 style={{ color: '#fff' }}>
+                      <Link to="#" style={{ color: '#fff' }}>Fire Retardant</Link>
                     </h2>
                   </div>
                   <p>Made to stop fires from spreading and keep you safe.</p>
@@ -154,20 +157,21 @@ export default class Unique extends React.Component {
               className="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp"
               data-wow-delay="0.4s"
             >
-              <div className="services-three__single">
-                <div className="shape1"></div>
-                <div className="services-three__single-icon">
-                  <div className="inner">
-                    <span className="fas fa-vials"></span>
-                  </div>
-                  <div className="icon">
-                    <span>+</span>
-                  </div>
-                </div>
-                <div className="services-three__single-content">
+              <div
+                className="services-three__single"
+                style={{
+                  backgroundImage: `url(${publicUrl}assets/images/services/unique/anti-bacterial.jpg)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  borderRadius: "16px",
+                  boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+                }}
+              >
+                {/* Removed the white circle overlay */}
+                <div className="services-three__single-content" style={{ color: '#fff' }}>
                   <div className="title">
-                    <h2>
-                      <Link to="#">AntiBacterial</Link>
+                    <h2 style={{ color: '#fff' }}>
+                      <Link to="#" style={{ color: '#fff' }}>AntiBacterial</Link>
                     </h2>
                   </div>
                   <p>Helps stop germs and keeps things clean and safe.</p>

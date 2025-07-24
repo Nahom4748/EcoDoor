@@ -28,33 +28,6 @@ export default class ServiceOne extends React.Component {
                     data-wow-duration="1000ms"
                   >
                     <div className="services-one__single">
-                      <div className="shape1">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape2.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape2">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape3.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape3">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape4.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
                       <div className="services-one__single-img">
                         <div
                           className="services-one__single-img-bg"
@@ -69,9 +42,9 @@ export default class ServiceOne extends React.Component {
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v1-img1.jpg"
+                            "assets/images/services/uniqueTwo/Waterproof.png"
                           }
-                          alt="#"
+                          alt="Waterproof"
                         />
                       </div>
 
@@ -98,33 +71,6 @@ export default class ServiceOne extends React.Component {
                     data-wow-duration="1000ms"
                   >
                     <div className="services-one__single">
-                      <div className="shape1">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape2.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape2">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape3.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape3">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape4.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
                       <div className="services-one__single-img">
                         <div
                           className="services-one__single-img-bg"
@@ -139,9 +85,9 @@ export default class ServiceOne extends React.Component {
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v1-img2.jpg"
+                            "assets/images/services/uniqueTwo/Soundproof.png"
                           }
-                          alt="#"
+                          alt="Soundproof"
                         />
                       </div>
 
@@ -168,33 +114,6 @@ export default class ServiceOne extends React.Component {
                     data-wow-duration="1000ms"
                   >
                     <div className="services-one__single">
-                      <div className="shape1">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape2.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape2">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape3.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape3">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape4.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
                       <div className="services-one__single-img">
                         <div
                           className="services-one__single-img-bg"
@@ -209,9 +128,9 @@ export default class ServiceOne extends React.Component {
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v1-img3.jpg"
+                            "assets/images/services/uniqueTwo/Fire Retardant.png"
                           }
-                          alt="#"
+                          alt="Fire Retardant"
                         />
                       </div>
 
@@ -238,33 +157,6 @@ export default class ServiceOne extends React.Component {
                     data-wow-duration="1000ms"
                   >
                     <div className="services-one__single">
-                      <div className="shape1">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape2.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape2">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape3.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
-                      <div className="shape3">
-                        <img
-                          src={
-                            publicUrl +
-                            "assets/images/shapes/services-v1-shape4.png"
-                          }
-                          alt="#"
-                        />
-                      </div>
                       <div className="services-one__single-img">
                         <div
                           className="services-one__single-img-bg"
@@ -279,9 +171,9 @@ export default class ServiceOne extends React.Component {
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v1-img4.jpg"
+                            "assets/images/services/uniqueTwo/AntiBacterial.png"
                           }
-                          alt="#"
+                          alt="Anti-Bacterial"
                         />
                       </div>
 
