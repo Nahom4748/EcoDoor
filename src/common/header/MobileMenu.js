@@ -39,12 +39,6 @@ const menuData = [
     path: "/contact",
   },
     {
-        title: 'Home',
-        path: '/',
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
-    },
-    {
         title: 'About',
         path: '/about',
     },
