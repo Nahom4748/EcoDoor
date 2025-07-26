@@ -53,9 +53,9 @@ body {
   overflow-x: hidden;
 }
 
-body.locked {
+/* body.locked {
   overflow: hidden;
-}
+} */
 
 a {
   color: var(--thm-black);
