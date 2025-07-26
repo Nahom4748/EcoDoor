@@ -37,12 +37,6 @@ const menuData = [
         iconOpened: <CgChevronDown />,
     },
     {
-        title: 'Vision & Mission',
-        path: '/vision-mission',
-        iconClosed: <CgChevronLeft />,
-        iconOpened: <CgChevronDown />,
-    },
-    {
         title: 'Contact',
         path: '/contact',
     },
