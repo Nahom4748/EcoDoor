@@ -55,7 +55,7 @@ export default class MissionVisionModern extends React.Component {
             <div className="card-inner">
               <div className="content">
                 <p>
-                  Charot is a family-owned manufacturer pioneering WPC (Wood-Plastic Composite) 
+                  Charot is a family-owned manufacturer pioneering Eco Door 
                   products in Ethiopia. From our roots in the historic Merkato Market to our 
                   modern eco-conscious production, we combine tradition with innovation to 
                   create sustainable building solutions.
@@ -76,7 +76,7 @@ export default class MissionVisionModern extends React.Component {
                   <h3>Our Vision</h3>
                 </div>
                 <p>
-                  To lead Ethiopia's WPC market by 2030 through sustainable innovation 
+                  To lead Ethiopia's Eco Door market by 2030 through sustainable innovation 
                   and exceptional quality standards.
                 </p>
                 <div className="card-footer">
@@ -95,7 +95,7 @@ export default class MissionVisionModern extends React.Component {
                   <h3>Our Mission</h3>
                 </div>
                 <p>
-                  To deliver eco-friendly WPC solutions that exceed expectations through 
+                  To deliver eco-friendly Eco Door solutions that exceed expectations through 
                   innovation, quality craftsmanship, and professional service.
                 </p>
                 <div className="card-footer">
@@ -135,7 +135,7 @@ export default class MissionVisionModern extends React.Component {
                   <h3>Our Products</h3>
                 </div>
                 <p>
-                  Premium WPC materials including doors, panels, and flooring - 
+                  Premium Eco Door materials including doors, panels, and flooring - 
                   waterproof, fire-retardant, soundproof, and antibacterial.
                 </p>
                 <div className="card-footer">

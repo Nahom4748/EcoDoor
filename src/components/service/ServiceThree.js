@@ -153,7 +153,7 @@ export default class ServiceThree extends React.Component {
                       </h2>
                     </div>
                     <p>
-                      TWe listen, support, and deliver what matters most to you.
+                      We listen, support, and deliver what matters most to you.
                     </p>
 
                     <div className="bottom-box">

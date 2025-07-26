@@ -11,11 +11,11 @@ export default class Unique extends React.Component {
           data-wow-delay="100ms"
           data-wow-duration="2500ms"
         >
-          <img
+          {/* <img
             className="float-bob-y"
             src={publicUrl + "assets/images/shapmjhes/services-v3-shape1.png"}
             alt="#"
-          />
+          /> */}
         </div>
         <div
           className="shape3 wow slideInRight"
