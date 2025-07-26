@@ -12,7 +12,8 @@ import {
   FiChevronLeft,
   FiChevronRight,
 } from "react-icons/fi";
-import "./ProductsPage.css"; // Assuming you have a CSS file for styling
+import "./ProductsPage.css"
+
 const ProductsGallery = () => {
   const publicUrl = process.env.PUBLIC_URL + "/";
 
