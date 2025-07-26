@@ -17,8 +17,8 @@ import ScrollToTopRoute from "./components/scroll-to-top-route/ScrollToTopRoute"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import 'swiper/css/effect-fade';
-import Products from './pages/Products.js';
+import "swiper/css/effect-fade";
+import Products from "./pages/Products.js";
 
 function App() {
   useEffect(() => {
@@ -53,11 +53,11 @@ function App() {
           element={<Projects />}
         />
         {/* <Route path={`${process.env.PUBLIC_URL}/vision-mission`} exact element={<TeamDetails />} /> */}
-        <Route
+        {/* <Route
           path={`${process.env.PUBLIC_URL}/vision-mission`}
           exact
           element={<MissionVision />}
-        />
+        /> */}
         <Route
           path={`${process.env.PUBLIC_URL}/products`}
           exact
