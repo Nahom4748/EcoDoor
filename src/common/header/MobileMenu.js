@@ -38,6 +38,47 @@ const menuData = [
     title: "Contact",
     path: "/contact",
   },
+=======
+    {
+        title: 'Home',
+        path: '/',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+    {
+        title: 'About',
+        path: '/about',
+    },
+    {
+        title: 'Services',
+        path: '/services',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+    
+    {
+        title: 'Products',
+        path: '/products',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+
+    {
+        title: 'Projects',
+        path: '/projects',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+    {
+        title: 'Vision & Mission',
+        path: '/vision-mission',
+        iconClosed: <CgChevronLeft />,
+        iconOpened: <CgChevronDown />,
+    },
+    {
+        title: 'Contact',
+        path: '/contact',
+    },
 ];
 
 const SidebarLink = styled(Link)`

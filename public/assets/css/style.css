@@ -1452,13 +1452,18 @@ a.sc-hLBbgP {
 # Main Header Css
 --------------------------------------------------------------*/
 .main-header {
-  position: relative;
-  display: block;
-  width: 100%;
-  background: transparent;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: 99;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background: #fff;
+}
+
+.main-header-one,
+.main-header-two,
+.main-header-three,
+.main-header-one__bottom,
+.main-header-one__bottom-inner {
+  position: static !important;
 }
 
 .main-menu {
@@ -12885,7 +12890,12 @@ Contact Page Bottom
   align-items: center;
 }
 
-.contact-page-bottom__content-img .contact-info ul li .inner .icon-box {
+.contact-page-bottom__content-img
+  .contact-info
+  ul
+  li
+  .inner
+  .icon-box {
   position: relative;
   display: block;
 }

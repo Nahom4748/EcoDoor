@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LogoTwo from "../../common/header/LogoTwo.js";
 
 export default class FooterOne extends React.Component {
+
   render() {
     let publicUrl = process.env.PUBLIC_URL + "/";
 
@@ -44,6 +45,41 @@ export default class FooterOne extends React.Component {
                         About
                       </h2>
                       <div style={{ display: "flex", gap: "5px" }}>
+=
+    render(){
+        let publicUrl = process.env.PUBLIC_URL+'/'
+        
+        // Style for the professional underlines
+        const sectionTitleStyle = {
+            position: 'relative',
+            paddingBottom: '5px',
+            marginBottom: '10px',
+            display: 'inline-block',
+            fontSize: '18px',
+            fontWeight: '600'
+        };
+        
+        return (
+          <>
+            <footer
+              className="footer-one"
+              style={{
+                backgroundColor: "rgb(38, 117, 72) ",
+                paddingTop: "20px",
+                marginTop: "-1px",
+              }}
+            >
+              {/* Main Footer Section */}
+              <div className="footer" style={{ padding: "0" }}>
+                <div className="container">
+                  <div className="row align-items-center">
+                    {/* Logo and About */}
+                    <div
+                      className="col-xl-3 col-lg-3 col-md-6 wow animated fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="footer-widget__single mb-4 mb-md-0">
+>
                         <div
                           style={{
                             width: "25px",

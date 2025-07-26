@@ -38,15 +38,16 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img1.jpg"
+                            // "assets/images/services/services-v2-img1.jpg"
+                            "assets/images/services/Services Images3.png"
                           }
-                          alt="#"
+                          alt="Customer-First Approach"
                         />
                       </div>
                     </div>
@@ -74,15 +75,15 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img2.jpg"
+                            "assets/images/services/Service Images6.png"
                           }
-                          alt="#"
+                          alt="High-Quality Products"
                         />
                       </div>
                     </div>
@@ -110,15 +111,15 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img3.jpg"
+                            "assets/images/services/Service Images11.png"
                           }
-                          alt="#"
+                          alt="Product Installation"
                         />
                       </div>
                     </div>
@@ -130,7 +131,7 @@ export default class ServiceTwo extends React.Component {
                         </Link>
                       </h2>
                       <p>
-                        We don’t just make the products — we install them for
+                        We don't just make the products — we install them for
                         you, too.
                       </p>
                     </div>
@@ -146,15 +147,15 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img4.jpg"
+                            "assets/images/services/Service Images19.png"
                           }
-                          alt="#"
+                          alt="After-Sales Support"
                         />
                       </div>
                     </div>
@@ -167,7 +168,7 @@ export default class ServiceTwo extends React.Component {
                       </h2>
                       <p>
                         Even after installation, we stay in touch to make sure
-                        you’re happy with the results.
+                        you're happy with the results.
                       </p>
                     </div>
                   </div>
@@ -182,15 +183,15 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img5.jpg"
+                            "assets/images/services/Service Images26.png"
                           }
-                          alt="#"
+                          alt="Growing Services"
                         />
                       </div>
                     </div>
@@ -219,15 +220,15 @@ export default class ServiceTwo extends React.Component {
                 data-wow-duration="1500ms"
               >
                 <div className="services-two__single">
-                  <div className="services-two__single-inner">
+                  <div className="services-two__single-inner tablet-inline">
                     <div className="services-two__single-img">
                       <div className="inner">
                         <img
                           src={
                             publicUrl +
-                            "assets/images/services/services-v2-img6.jpg"
+                            "assets/images/services/Service Images30.png"
                           }
-                          alt="#"
+                          alt="Win-Win Relationships"
                         />
                       </div>
                     </div>
