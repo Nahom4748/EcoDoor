@@ -1176,7 +1176,7 @@ animation: spinner 1s infinite linear;
 .mobile-nav__content {
   position: relative;
   width: 300px;
-  background-color: var(--thm-base);
+  background-color: #2e8b57;
   height: 100%;
   overflow-y: auto;
   padding-top: 30px;
@@ -5102,7 +5102,7 @@ Work Process One
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 10px 0px 90px;
+  padding: 88px 0px 90px;
   counter-reset: count;
   z-index: 1;
 }

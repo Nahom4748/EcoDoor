@@ -37,7 +37,7 @@ export default class HeaderTwo extends React.Component {
                         <div className="text-box">
                           <p>Call anytime </p>
                           <h6>
-                            <a href="tel:+251908686868">+251908686868</a>
+                            <a href="tel:+251908686868">+251908 686868</a>
                             <br />
 
                             <a href="tel:+251908686868">+251908 676767</a>
