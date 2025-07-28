@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import {
   FiZoomIn,
   FiHeart,
-  FiShare2,
   FiX,
   FiChevronLeft,
   FiChevronRight,
@@ -135,8 +134,7 @@ const ProductsGallery = () => {
         >
           <h1>Premium Door Collection</h1>
           <p>
-            Discover our handcrafted doors blending modern design with timeless
-            craftsmanship
+            Step into style with our beautifully crafted, modern eco doors.
           </p>
         </motion.div>
       </section>
