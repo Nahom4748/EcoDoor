@@ -8,10 +8,6 @@ const Contact = () => {
     return (
         <>
             <HeaderTwo />
-            {/* <Breadcrumb 
-                heading="Contact Us"
-                currentPage="Contact" 
-            /> */}
             <ContactForm />
             <ContactMap />
             <FooterOne />
