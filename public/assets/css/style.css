@@ -24,7 +24,7 @@
   --thm-gray-rgb: 124, 128, 130;
   --thm-base: #02801d;
   --thm-base-rgb: 2, 128, 29;
-  --thm-black: #123316;
+  --thm-black: #2e8b57;
   --thm-black-rgb: 18, 51, 22;
   --thm-bl: #0b3d2c;
 }
@@ -12906,12 +12906,7 @@ Contact Page Bottom
   align-items: center;
 }
 
-.contact-page-bottom__content-img
-  .contact-info
-  ul
-  li
-  .inner
-  .icon-box {
+.contact-page-bottom__content-img .contact-info ul li .inner .icon-box {
   position: relative;
   display: block;
 }

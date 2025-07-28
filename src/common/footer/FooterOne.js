@@ -68,7 +68,13 @@ export default class FooterOne extends React.Component {
     };
 
     return (
-      <footer style={criticalStyles.footer}>
+      <footer
+        className="footer-one"
+        style={{
+          paddingTop: "20px",
+          marginTop: "-1px",
+        }}
+      >
         {/* Main Footer Section */}
         <div style={{ padding: "0" }}>
           <div className="container">

@@ -35,7 +35,6 @@ function App() {
           exact
           element={<HomeDefault />}
         />
-
         <Route
           path={`${process.env.PUBLIC_URL}/about`}
           exact
