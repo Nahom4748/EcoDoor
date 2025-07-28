@@ -9,7 +9,6 @@ import HomeDefault from "./pages/HomeDefault";
 import About from "./pages/About";
 import Service from "./pages/Service";
 // import TeamDetails from "./pages/TeamDetails";
-import MissionVision from "./pages/MissionVision.js";
 import Projects from "./pages/Projects.js";
 import Contact from "./pages/Contact";
 import ScrollToTopRoute from "./components/scroll-to-top-route/ScrollToTopRoute";
@@ -51,13 +50,7 @@ function App() {
           exact
           element={<Projects />}
         />
-        {/* <Route path={`${process.env.PUBLIC_URL}/vision-mission`} exact element={<TeamDetails />} /> */}
-        {/* <Route
-          path={`${process.env.PUBLIC_URL}/vision-mission`}
-          exact
-          element={<MissionVision />}
-        /> */}
-        <Route
+         <Route
           path={`${process.env.PUBLIC_URL}/products`}
           exact
           element={<Products />}
