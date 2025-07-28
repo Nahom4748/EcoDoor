@@ -3,15 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 import WOW from "wowjs";
 import { FaAngleUp } from "react-icons/fa";
-
-//Pages
 import HomeDefault from "./pages/HomeDefault";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Projects from "./pages/Projects.js";
 import Contact from "./pages/Contact";
 import ScrollToTopRoute from "./components/scroll-to-top-route/ScrollToTopRoute";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -33,7 +30,6 @@ function App() {
           exact
           element={<HomeDefault />}
         />
-
         <Route
           path={`${process.env.PUBLIC_URL}/about`}
           exact

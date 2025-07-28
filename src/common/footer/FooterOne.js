@@ -20,6 +20,7 @@ export default class FooterOne extends React.Component {
       <footer
         className="footer-one"
         style={{
+          backgroundColor: "rgb(38, 117, 72)",
           paddingTop: "20px",
           marginTop: "-1px",
         }}

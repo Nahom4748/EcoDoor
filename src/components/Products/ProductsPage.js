@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "./ProductsPage.css"; // Assuming you have a CSS file for styling
 import {
   FiZoomIn,
   FiHeart,
@@ -11,7 +12,6 @@ import {
   FiChevronLeft,
   FiChevronRight,
 } from "react-icons/fi";
-import "./ProductsPage.css";
 
 const ProductsGallery = () => {
   const publicUrl = process.env.PUBLIC_URL + "/";
@@ -72,34 +72,6 @@ const ProductsGallery = () => {
       title: "Custom Carved",
       category: "Artisan Doors",
       price: "$899",
-    },
-    {
-      id: 9,
-      image: "/assets/Product/photo_20.jpg",
-      title: "Contemporary Glass",
-      category: "Patio Doors",
-      price: "$699",
-    },
-    {
-      id: 10,
-      image: "/assets/Product/photo_10.jpg",
-      title: "Contemporary Glass",
-      category: "Patio Doors",
-      price: "$699",
-    },
-    {
-      id: 11,
-      image: "/assets/Product/photo_11.jpg",
-      title: "Contemporary Glass",
-      category: "Patio Doors",
-      price: "$699",
-    },
-    {
-      id: 12,
-      image: "/assets/Product/photo_21.jpg",
-      title: "Contemporary Glass",
-      category: "Patio Doors",
-      price: "$699",
     },
   ];
 

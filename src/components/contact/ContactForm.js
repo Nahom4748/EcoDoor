@@ -17,15 +17,14 @@ export default class ContactForm extends React.Component {
                       <span className="right"></span>
                     </div>
                     <h2 className="sec-title__title">
-                      Get in Touch <br />{" "}
+                      Get in Touch <br />
                     </h2>
                   </div>
 
                   <form
-                    id="contact-form"
+                    action="https://formsubmit.co/info.charot@gmail.com"
+                    method="POST"
                     className="default-form2 contact-form-validated"
-                    action="#"
-                    novalidate="novalidate"
                   >
                     <div className="row">
                       <div className="col-xl-6 col-lg-6 col-md-6">
@@ -33,9 +32,8 @@ export default class ContactForm extends React.Component {
                           <input
                             type="text"
                             name="name"
-                            value=""
                             placeholder="Your Name"
-                            required=""
+                            required
                           />
                         </div>
                       </div>
@@ -44,9 +42,8 @@ export default class ContactForm extends React.Component {
                           <input
                             type="email"
                             name="email"
-                            value=""
                             placeholder="Email Address"
-                            required=""
+                            required
                           />
                         </div>
                       </div>
@@ -76,6 +73,7 @@ export default class ContactForm extends React.Component {
                           <textarea
                             name="message"
                             placeholder="Write a Message"
+                            required
                           ></textarea>
                         </div>
                       </div>
@@ -85,7 +83,6 @@ export default class ContactForm extends React.Component {
                           <button
                             className="thm-btn"
                             type="submit"
-                            data-loading-text="Please wait..."
                           >
                             <span className="txt">Send Message</span>
                             <i className="fa fa-angle-double-right"></i>
@@ -103,7 +100,7 @@ export default class ContactForm extends React.Component {
                 <div className="contact-page__img">
                   <img
                     src={publicUrl + "assets/product/photo_34.jpg"}
-                    alt="#"
+                    alt="Contact"
                   />
                 </div>
               </div>
