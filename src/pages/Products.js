@@ -18,24 +18,6 @@ const Products = () => {
       <HeaderTwo />
       
       <main className="products-main">
-        {/* Hero Section */}
-        {/* <section className="products-hero bg-dark text-white py-5">
-          <div className="container">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={fadeIn}
-              className="text-center py-5"
-            >
-              <h1 className="display-4 fw-bold mb-3">Our Premium Products</h1>
-              <p className="lead mb-4">
-                Explore our range of eco-friendly doors designed to enhance your space
-              </p>
-            </motion.div>
-          </div>
-        </section> */}
-
-        {/* Main Products Content */}
         <ProductsPage />
       </main>
 

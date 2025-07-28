@@ -283,9 +283,9 @@ li {
 }
 
 .sec-title__title {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1em;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: capitalize;
 }
 
@@ -3786,7 +3786,7 @@ Why Choose One
 .why-choose-one {
   position: relative;
   display: block;
-  padding: 120px 0px 120px;
+  padding: 10px 0px 120px;
   margin-top: 50px;
   overflow: hidden;
   z-index: 1;
@@ -4648,7 +4648,7 @@ Services One
   position: relative;
   display: block;
   background: #ffffff;
-  padding: 122px 0px 190px;
+  padding: 10px 0px 190px;
   z-index: 1;
 }
 
@@ -9645,7 +9645,7 @@ Services Three
 .services-three {
   position: relative;
   display: block;
-  padding: 120px 0px 240px;
+  padding: 40px 0px 20px;
   overflow: hidden;
   z-index: 1;
 }
@@ -9686,7 +9686,6 @@ Services Three
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(var(--thm-black-rgb), 0.92);
   content: "";
   z-index: -2;
 }
@@ -9744,7 +9743,7 @@ Services Three
 .services-three__single {
   position: relative;
   display: block;
-  background: #ffffff;
+  background: #EDF4F1;
   padding: 45px 30px 35px;
   overflow: hidden;
   margin-bottom: 30px;

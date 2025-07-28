@@ -11,11 +11,7 @@ export default class Unique extends React.Component {
           data-wow-delay="100ms"
           data-wow-duration="2500ms"
         >
-          {/* <img
-            className="float-bob-y"
-            src={publicUrl + "assets/images/shapmjhes/services-v3-shape1.png"}
-            alt="#"
-          /> */}
+
         </div>
         <div
           className="shape3 wow slideInRight"
@@ -30,20 +26,22 @@ export default class Unique extends React.Component {
         </div>
         <div
           className="services-three__bg"
-          style={{
-            backgroundImage: `url(${publicUrl}assets/E-DoorPhotos/five.jpg)`,
-          }}
+          // style={{
+          //   backgroundImage: `url(${publicUrl}assets/E-DoorPhotos/five.jpg)`,
+          // }}
         ></div>
 
         <div className="container">
           <div className="services-three__top">
-            <div className="sec-title-three">
-              <div className="sec-title-three__tagline">
-                <h6>What makes us unique?</h6>
+           <div className="sec-title text-center">
+              <div className="sec-title__tagline">
+                <span className="left"></span>
+                <h6>
+What makes us unique?</h6>
+                <span className="right"></span>
               </div>
-              <h2 className="sec-title-three__title">
-                Defined by <br /> Purpose and Values.
-              </h2>
+              <h6 className="sec-title__title">Defined by
+Purpose and Values.</h6>
             </div>
 
             <div className="services-three__top-text">

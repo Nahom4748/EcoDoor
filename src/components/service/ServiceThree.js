@@ -23,23 +23,21 @@ export default class ServiceThree extends React.Component {
           </div>
           <div
             className="services-three__bg"
-            style={{
-              backgroundImage:
-                "url(" +
-                publicUrl +
-                "assets//E-DoorPhotos/five.jpg)",
-            }}
+            
           ></div>
           <div className="container">
             <div className="services-three__top">
-              <div className="sec-title-three">
-                <div className="sec-title-three__tagline">
-                  <h6>Our Core Values</h6>
-                </div>
-                <h2 className="sec-title-three__title">
-                  Built on Purpose. <br /> Guided by Values.{" "}
-                </h2>
+                <div className="sec-title text-center">
+              <div className="sec-title__tagline">
+                <span className="left"></span>
+                <h6>
+Our Core Values</h6>
+                <span className="right"></span>
               </div>
+              <h6 className="sec-title__title">Built on Purpose.
+Guided by Values.</h6>
+            </div>
+
 
               <div className="services-three__top-text">
                 <p>

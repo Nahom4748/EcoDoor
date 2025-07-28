@@ -18,9 +18,7 @@ const About = () => {
 
       <ServiceThree />
       <WhyChooseOne />
-      {/* <ServiceTwo /> */}
-      {/* <TestimonialTwo />
-      <TeamTwo /> */}
+  
       <FooterOne />
     </>
   );

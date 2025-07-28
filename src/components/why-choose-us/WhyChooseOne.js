@@ -74,13 +74,19 @@ export default class WhyChooseOne extends React.Component {
             <>
                 <section className="why-choose-one">
                     <div className="shape1"></div>
-                    <div className="shape2"><img src={publicUrl+"assets/images/shapes/why-choose-v1-shape1.png"} alt="#" /></div>
-                    <div className="shape3"><img src={publicUrl+"assets/images/shapes/why-choose-v1-shape2.png"} alt="#" /></div>
-                    <div className="why-choose-one__bg" style={{backgroundImage: 'url('+publicUrl+'assets/E-DoorPhotos/three.jpg)'}}></div>
+                    {/* <div className="shape2"><img src={publicUrl+"assets/images/shapes/why-choose-v1-shape1.png"} alt="#" /></div>
+                    <div className="shape3"><img src={publicUrl+"assets/images/shapes/why-choose-v1-shape2.png"} alt="#" /></div> */}
+                    <div className="why-choose-one__bg" ></div>
                     <div className="container">
-                        <div className="sec-title text-center">
-                            <h2 className="sec-title__title">Why Choose Us</h2>
-                        </div>
+                          <div className="sec-title text-center">
+              <div className="sec-title__tagline">
+                <span className="left"></span>
+                <h6>
+Why Choose Us</h6>
+                <span className="right"></span>
+              </div>
+              <h6 className="sec-title__title">Eco-Friendly. Reliable. Affordable.</h6>
+            </div>
 
                         <div className="row">
                             <div className="col-xl-12">
@@ -109,7 +115,7 @@ export default class WhyChooseOne extends React.Component {
                                                     {/* Start Tab - Eco-Friendly */}
                                                     <div className="tab" id="services">
                                                         <div className="tabs-content__inner">
-                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img1.jpg)'}}></div>
+                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why.png)'}}></div>
                                                             <div className="tabs-content__list clearfix">
                                                                 <ul className="clearfix">
                                                                     <li>
@@ -156,7 +162,7 @@ export default class WhyChooseOne extends React.Component {
                                                     {/* Start Tab - Durability & Security */}
                                                     <div className="tab active-tab" id="environmental">
                                                         <div className="tabs-content__inner">
-                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img2.jpg)'}}></div>
+                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why2.jpg)'}}></div>
                                                             <div className="tabs-content__list clearfix">
                                                                 <ul className="clearfix">
                                                                     <li>
@@ -203,7 +209,7 @@ export default class WhyChooseOne extends React.Component {
                                                     {/* Start Tab - Customer Satisfaction */}
                                                     <div className="tab" id="support">
                                                         <div className="tabs-content__inner">
-                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why-choose-v1-img3.jpg)'}}></div>
+                                                            <div className="tabs-content__inner-bg" style={{backgroundImage: 'url('+publicUrl+'assets/images/resources/why3.jpg)'}}></div>
                                                             <div className="tabs-content__list clearfix">
                                                                 <ul className="clearfix">
                                                                     <li>
