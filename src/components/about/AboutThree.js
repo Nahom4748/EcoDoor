@@ -49,10 +49,10 @@ export default class AboutThree extends React.Component {
                   <ul>
                     <li>
                       <h2>
-                        <span className="odometer" data-count="5 ">
+                        <span className="odometer" data-count="5">
                           00
                         </span>
-                         Years experience
+                        + Years experience
                       </h2>
                       <h3>Satisfied Customers</h3>
                       <p>
