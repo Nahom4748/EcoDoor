@@ -114,10 +114,10 @@ export default function RecentProjects() {
         </div>
       </section>
 
-      {/* Project Gallery Overlay */}
+      {/* Project Gallery Overlay - Simplified version */}
       {activeProject && (
-        <div className="project-gallery-overlay">
-          <div className="gallery-container">
+        <div className="project-gallery-overlay" onClick={closeGallery}>
+          <div className="gallery-container" onClick={(e) => e.stopPropagation()}>
             <button className="close-gallery" onClick={closeGallery}>
               &times;
             </button>
@@ -151,25 +151,7 @@ export default function RecentProjects() {
             <div className="gallery-content">
               <h3>{activeProject.title}</h3>
               <p>{activeProject.description}</p>
-              <Link 
-                to={process.env.PUBLIC_URL + activeProject.link}
-                className="view-details-btn"
-                onClick={closeGallery}
-              >
-                View Project Details
-              </Link>
-            </div>
-            
-            <div className="thumbnail-container">
-              {activeProject.images.map((image, index) => (
-                <img
-                  key={index}
-                  src={publicUrl + image}
-                  alt={`Thumbnail ${index + 1}`}
-                  className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
-                  onClick={() => setCurrentImageIndex(index)}
-                />
-              ))}
+             
             </div>
           </div>
         </div>

@@ -38,12 +38,12 @@ export default class OurCustomers extends React.Component {
                   <div className="services-one__single-img">
                     <div
                       className="services-one__single-img-bg"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          publicUrl +
-                          "assets/images/shapes/services-v1-shape1.png)",
-                      }}
+                      // style={{
+                      //   backgroundImage:
+                      //     "url(" +
+                      //     publicUrl +
+                      //     "assets/images/shapes/services-v1-shape1.png)",
+                      // }}
                     ></div>
 
                     <img
@@ -88,12 +88,12 @@ export default class OurCustomers extends React.Component {
                   <div className="services-one__single-img">
                     <div
                       className="services-one__single-img-bg"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          publicUrl +
-                          "assets/images/shapes/services-v1-shape1.png)",
-                      }}
+                      // style={{
+                      //   backgroundImage:
+                      //     "url(" +
+                      //     publicUrl +
+                      //     "assets/images/shapes/services-v1-shape1.png)",
+                      // }}
                     ></div>
 
                     <img
@@ -143,12 +143,12 @@ export default class OurCustomers extends React.Component {
                   <div className="services-one__single-img">
                     <div
                       className="services-one__single-img-bg"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          publicUrl +
-                          "assets/images/shapes/services-v1-shape1.png)",
-                      }}
+                      // style={{
+                      //   backgroundImage:
+                      //     "url(" +
+                      //     publicUrl +
+                      //     "assets/images/shapes/services-v1-shape1.png)",
+                      // }}
                     ></div>
 
                     <img
@@ -202,12 +202,12 @@ export default class OurCustomers extends React.Component {
                   <div className="services-one__single-img">
                     <div
                       className="services-one__single-img-bg"
-                      style={{
-                        backgroundImage:
-                          "url(" +
-                          publicUrl +
-                          "assets/images/shapes/services-v1-shape1.png)",
-                      }}
+                      // style={{
+                      //   backgroundImage:
+                      //     "url(" +
+                      //     publicUrl +
+                      //     "assets/images/shapes/services-v1-shape1.png)",
+                      // }}
                     ></div>
 
                     <img
