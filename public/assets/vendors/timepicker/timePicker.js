@@ -219,13 +219,11 @@
                         .bind("click", function(){
                             jQuery.ptTimeSelect.setMin($(this).text());
                          });
-                    
-                    e.find('.ptTimeSelectHr')
-                        .bind("click", function(){
-                            jQuery.ptTimeSelect.setHr($(this).text());
-                         });
-                    
-                    $(document).mousedown(jQuery.ptTimeSelect._doCheckMouseClick);            
+                 if (jQuery.ptTimeSelect && typeof jQuery.ptTimeSelect._doCheckMouseClick === "function") {
+    $(document).mousedown(jQuery.ptTimeSelect._doCheckMouseClick);
+}
+
+                               
                 }//end if
             }
         );

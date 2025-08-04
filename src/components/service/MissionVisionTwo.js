@@ -135,7 +135,7 @@ export default class MissionVisionModern extends React.Component {
                   <h3>Our Products</h3>
                 </div>
                 <p>
-                  Premium Eco Door materials including doors, panels, and flooring - 
+                  Premium Eco Door materials including doors, panels, and Main Gates - 
                   waterproof, fire-retardant, soundproof, and antibacterial.
                 </p>
                 <div className="card-footer">

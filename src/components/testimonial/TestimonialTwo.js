@@ -49,7 +49,7 @@ export default class TestimonialTwo extends React.Component {
                         <div className="sec-title style2">
                             <div className="sec-title__tagline">
                               
-                                <h6>Our Testimonilas</h6>
+                                <h6>Our Testimonials</h6>
                             </div>
                             <h2 className="sec-title__title">
                                 People Say About Us</h2>

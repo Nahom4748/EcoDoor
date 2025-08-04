@@ -13,11 +13,11 @@ export default class ContactForm extends React.Component {
                 <div className="contact-one__form contact-one__form--contact">
                   <div className="sec-title">
                     <div className="sec-title__tagline">
-                      <h6>Call to Action</h6>
+                      <h6>Start your project with us </h6>
                       <span className="right"></span>
                     </div>
                     <h2 className="sec-title__title">
-                      Get in Touch <br />
+                      message, call, or email anytime! <br />
                     </h2>
                   </div>
 

@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import Products from "./pages/Products.js";
 
+
 function App() {
   useEffect(() => {
     new WOW.WOW({

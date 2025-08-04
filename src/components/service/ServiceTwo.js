@@ -16,13 +16,13 @@ export default class ServiceTwo extends React.Component {
       {
         title: "High-Quality WPC Products",
         description: "We provide strong, long-lasting Wood-Plastic Composite products at competitive prices.",
-        image: "assets/images/services/Service Images6.png",
+        image: "assets/images/services/Service Images6.jpg",
         icon: "fa fa-award"
       },
       {
         title: "Professional Installation",
         description: "We don't just manufacture products — our experts handle the complete installation process.",
-        image: "assets/images/services/Service Images11.png",
+        image: "assets/images/services/Service Images7.jpg",
         icon: "fa fa-tools"
       },
       {
@@ -34,7 +34,7 @@ export default class ServiceTwo extends React.Component {
       {
         title: "Expanding Service Portfolio",
         description: "Continuously innovating to bring more eco-friendly building solutions to Ethiopia.",
-        image: "assets/images/services/Service Images26.png",
+        image: "assets/images/services/Service Images8.jpg",
         icon: "fa fa-chart-line"
       },
       {
@@ -73,7 +73,7 @@ export default class ServiceTwo extends React.Component {
             {/* Section header */}
             <header className="section-header center">
               <span className="section-subtitle">OUR EXPERTISE</span>
-              <h1 id="services-heading" className="section-title">Premium WPC Door Services</h1>
+              <h1 id="services-heading" className="section-title">High Quality Door Services</h1>
               <div className="divider">
                 <span className="middle"></span>
               </div>

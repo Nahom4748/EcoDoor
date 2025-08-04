@@ -153,7 +153,7 @@ export default class WorkProcessOne extends React.Component {
                       </Link>
                     </h2>
                     <p>
-                      Utilize precise techniques and premium materials to build
+                      Utilize precise techniques and Sustainable materials to build
                       the door according to the approved design specifications.
                     </p>
                   </div>

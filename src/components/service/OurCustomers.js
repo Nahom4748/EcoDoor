@@ -111,7 +111,7 @@ export default class OurCustomers extends React.Component {
                       </Link>
                     </h2>
                     <p>
-                      Create a premium guest experience with modern, soundproof,
+                      Create a luxury guest experience with modern, soundproof,
                       and elegant eco doors.
                     </p>
                   </div>

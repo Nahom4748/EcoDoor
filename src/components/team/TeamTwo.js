@@ -13,7 +13,7 @@ export default function RecentProjects() {
     {
       id: 1,
       title: "Halbulalo Realstate",
-      description: "A full residential project in Addis Ababa featuring eco-friendly doors and furniture by Charot Eco Doors Company.",
+      description: "A full residential project in Addis Ababa featuring eco-friendly doors by Charot Eco Doors Company.",
       images: [
         "assets/images/project/pro001.jpg",
         "assets/images/project/10002.jpg",
@@ -22,8 +22,8 @@ export default function RecentProjects() {
       features: [
         "Eco-friendly materials",
         "Custom door designs",
-        "Sustainable furniture",
-        "Modern architecture"
+        "Modern architecture",
+        
       ]
     },
     {
