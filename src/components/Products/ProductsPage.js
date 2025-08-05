@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion";
 import { Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
@@ -172,6 +172,7 @@ const ModalOverlay = styled(motion.div)`
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  cursor: pointer;
 `;
 
 const ModalContent = styled.div`
@@ -181,6 +182,7 @@ const ModalContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
 `;
 
 const ModalImage = styled.img`
@@ -234,6 +236,7 @@ const EcoDoorGallery = () => {
   const bottomTrackRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const modalRef = useRef(null);
 
   const galleryItems = [
     { id: 1, src: "/assets/Product/photo_2.jpg", alt: "Modern eco-friendly wooden door" },
@@ -271,9 +274,9 @@ const EcoDoorGallery = () => {
     }
   }, [controls, isInView]);
 
-  // Faster auto-scroll animation
+  // Faster auto-scroll animation with useCallback for stable reference
   useEffect(() => {
-    const speed = 60; // Increased from 35 to 60 for faster scrolling
+    const speed = 60;
     let animationFrameId;
     let startTime;
     let progress = 0;
@@ -290,7 +293,6 @@ const EcoDoorGallery = () => {
         bottomTrackRef.current.style.transform = `translateX(${progress}px)`;
       }
 
-      // Reset progress when it exceeds the width of one set of items
       if (progress > galleryItems.length * 370) {
         progress = 0;
         startTime = timestamp;
@@ -306,28 +308,23 @@ const EcoDoorGallery = () => {
     };
   }, [galleryItems.length]);
 
-  const handleImageClick = (item) => {
+  // Memoized click handlers for better performance
+  const handleImageClick = useCallback((item) => {
     setSelectedImage(item);
     setModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = (e) => {
-    e.stopPropagation(); // Prevent event bubbling to overlay
+  const closeModal = useCallback((e) => {
+    e?.stopPropagation(); // Optional chaining in case it's called without event
     setModalOpen(false);
     setSelectedImage(null);
-  };
+  }, []);
 
-  // Close modal when clicking outside image
-  const handleOverlayClick = () => {
-    setModalOpen(false);
-    setSelectedImage(null);
-  };
-
-  // Close modal with ESC key
+  // Close modal with ESC key - memoized handler
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
-        closeModal(e);
+        closeModal();
       }
     };
 
@@ -338,7 +335,24 @@ const EcoDoorGallery = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [modalOpen]);
+  }, [modalOpen, closeModal]);
+
+  // Close modal when clicking outside (with improved event handling)
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (modalOpen && modalRef.current && !modalRef.current.contains(e.target)) {
+        closeModal();
+      }
+    };
+
+    if (modalOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [modalOpen, closeModal]);
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -380,27 +394,7 @@ const EcoDoorGallery = () => {
       <GalleryWrapper ref={containerRef}>
         <main className="eco-gallery-main">
           <Container>
-            {/* <SectionHeader 
-              initial={{ opacity: 0, y: -20 }}
-              animate={controls}
-              transition={{ duration: 0.6 }}
-              variants={{
-                visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: -20 }
-              }}
-            >
-              <span className="section-subtitle">OUR PRODUCTS</span>
-              <h1 className="section-title">High Quality Door Collection</h1>
-              <Divider>
-                <span className="middle"></span>
-              </Divider>
-              <p className="section-description">
-                Sustainable & Stylish – Premium Eco Door Collection
-              </p>
-            </SectionHeader> */}
-
-
-              <div className="sec-title text-center">
+            <div className="sec-title text-center">
               <div className="sec-title__tagline">
                 <span className="left"></span>
                 <h6>OUR PRODUCTS</h6>
@@ -476,9 +470,12 @@ const EcoDoorGallery = () => {
               animate="visible"
               exit="hidden"
               variants={modalVariants}
-              onClick={handleOverlayClick}
+              onClick={closeModal}
             >
-              <ModalContent onClick={(e) => e.stopPropagation()}>
+              <ModalContent 
+                ref={modalRef}
+                onClick={(e) => e.stopPropagation()}
+              >
                 <ModalImage
                   src={selectedImage?.src}
                   alt={selectedImage?.alt}
