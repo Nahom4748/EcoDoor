@@ -1,272 +1,18 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
-import { motion, useAnimation, useInView, AnimatePresence } from "framer-motion";
+import React, { useRef, useEffect } from 'react';
+import { motion, useAnimation, useInView } from "framer-motion";
+import lightGallery from 'lightgallery';
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
 import { Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
-import styled, { createGlobalStyle } from 'styled-components';
-import { FiClock, FiX } from 'react-icons/fi';
+import styled from 'styled-components';
 
-// Global style for when modal is open
-const GlobalStyle = createGlobalStyle`
-  body {
-    overflow: ${props => props.modalOpen ? 'hidden' : 'auto'};
-  }
-`;
-
-// Styled Components
-const GalleryWrapper = styled.div`
-  background-color: #f8f9fa;
-  min-height: 100vh;
-  padding: 4rem 0;
-  font-family: 'Inter', sans-serif;
-  position: relative;
-  overflow: hidden;
-`;
-
-const AutoScrollGallery = styled.div`
-  position: relative;
-  width: 100%;
-  margin: 4rem 0;
-  overflow: hidden;
-`;
-
-const ScrollTrack = styled(motion.div)`
-  display: flex;
-  gap: 2rem;
-  will-change: transform;
-  padding: 1rem 0;
-`;
-
-const ScrollItem = styled.div`
-  flex: 0 0 auto;
-  width: 350px;
-  height: 500px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-    
-    .zoom-icon {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 430px;
-  }
-  
-  @media (max-width: 768px) {
-    width: 250px;
-    height: 360px;
-  }
-  
-  @media (max-width: 480px) {
-    width: 200px;
-    height: 290px;
-  }
-`;
-
-const ScrollImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-`;
-
-const ZoomIcon = styled.div`
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: scale(0.8);
-  z-index: 2;
-  
-  svg {
-    color: #2e8b57;
-    font-size: 20px;
-  }
-  
-  &:hover {
-    background: #2e8b57;
-    
-    svg {
-      color: white;
-    }
-  }
-`;
-
-const SectionHeader = styled(motion.section)`
-  text-align: center;
-  margin-bottom: 4rem;
-  padding: 1rem 0;
-
-  .section-subtitle {
-    display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #2e8b57;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-  }
-
-  .section-title {
-    font-size: clamp(2rem, 6vw, 3rem);
-    font-weight: 700;
-    color: #2a3439;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-  }
-
-  .section-description {
-    font-size: clamp(1.1rem, 2.8vw, 1.3rem);
-    color: #4a5568;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-`;
-
-const Divider = styled.div`
-  position: relative;
-  height: 4px;
-  width: 100px;
-  margin: 2rem auto;
-  background-color: rgba(46, 139, 87, 0.2);
-
-  .middle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 50px;
-    background-color: #2e8b57;
-  }
-`;
-
-const ModalOverlay = styled(motion.div)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.95);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  cursor: pointer;
-`;
-
-const ModalContent = styled.div`
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-`;
-
-const ModalImage = styled.img`
-  max-width: 100%;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-`;
-
-const CloseButton = styled.button`
-  position: absolute;
-  top: -50px;
-  right: 0;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  outline: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-  color: #2e8b57;
-  z-index: 1001;
-
-  &:hover {
-    background: #2e8b57;
-    transform: scale(1.1);
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    top: -60px;
-    right: -10px;
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-// Main Component
 const EcoDoorGallery = () => {
+  const galleryRef = useRef(null);
   const controls = useAnimation();
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.1 });
-  const topTrackRef = useRef(null);
-  const bottomTrackRef = useRef(null);
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const modalRef = useRef(null);
-
-  const galleryItems = [
-    { id: 1, src: "/assets/Product/photo_2.jpg", alt: "Modern eco-friendly wooden door" },
-    { id: 2, src: "/assets/Product/photo_8.jpg", alt: "Contemporary glass door design" },
-    { id: 3, src: "/assets/Product/photo_34.jpg", alt: "Sustainable entry door with side panels" },
-    { id: 4, src: "/assets/Product/photo_16.jpg", alt: "Minimalist interior eco door" },
-    { id: 5, src: "/assets/Product/photo_12.jpg", alt: "Rustic wooden exterior door" },
-    { id: 6, src: "/assets/Product/photo_28.jpg", alt: "Modern black steel frame door" },
-    { id: 7, src: "/assets/Product/photo_30.jpg", alt: "French patio eco doors" },
-    { id: 8, src: "/assets/Product/photo_18.jpg", alt: "Custom carved wooden door" },
-    { id: 9, src: "/assets/Product/photo_0011.jpg", alt: "Sliding barn door design" },
-    { id: 10, src: "/assets/Product/photo_0022.jpg", alt: "Frosted glass office door" },
-    { id: 11, src: "/assets/Product/photo_0033.jpg", alt: "Elegant double entry doors" },
-    { id: 12, src: "/assets/Product/photo_0044.jpg", alt: "Contemporary pivot door" },
-    { id: 13, src: "/assets/Product/photo_0055.jpg", alt: "Eco-friendly bi-fold doors" },
-    { id: 14, src: "/assets/Product/photo_0066.jpg", alt: "Modern front door with sidelights" },
-    { id: 15, src: "/assets/Product/photo_0077.jpg", alt: "Stylish wooden door with transom" },
-    { id: 16, src: "/assets/Product/photo_0088.jpg", alt: "Sleek aluminum door design" },
-    { id: 17, src: "/assets/Product/photo_0099.jpg", alt: "Artistic wooden door with glass" },
-    { id: 18, src: "/assets/Product/photo_0010.jpg", alt: "Contemporary eco-friendly door" },
-    { id: 19, src: "/assets/Product/photo_001011.jpg", alt: "Modern front door with glass panels" },
-    { id: 20, src: "/assets/Product/photo_001022.jpg", alt: "Rustic wooden barn door" },
-    { id: 21, src: "/assets/Product/photo_001033.jpg", alt: "Elegant double door entry" },
-    { id: 22, src: "/assets/Product/photo_001044.jpg", alt: "Sustainable sliding patio door" },
-    { id: 23, src: "/assets/Product/photo_001055.jpg", alt: "Custom carved wooden door design" },
-    { id: 24, src: "/assets/Product/photo_001066.jpg", alt: "Modern glass office door" },
-  ];
-
-  // Double the items for seamless looping
-  const doubledItems = [...galleryItems, ...galleryItems];
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   useEffect(() => {
     if (isInView) {
@@ -274,85 +20,68 @@ const EcoDoorGallery = () => {
     }
   }, [controls, isInView]);
 
-  // Faster auto-scroll animation with useCallback for stable reference
+  const galleryItems = [
+    { id: 1, src: "/assets/Product/photo_2.jpg", alt: "Modern eco-friendly wooden door" },
+    { id: 2, src: "/assets/Product/photo_8.jpg", alt: "Contemporary glass door design" },
+    { id: 3, src: "/assets/Product/photo_34.jpg", alt: "Sustainable entry door with side panels" },
+    { id: 5, src: "/assets/Product/photo_12.jpg", alt: "Rustic wooden exterior door" },
+    { id: 6, src: "/assets/Product/photo_28.jpg", alt: "Modern black steel frame door" },
+    { id: 26, src: "/assets/Product/0066.jpg", alt: "Stylish eco-friendly front door" },
+    { id: 8, src: "/assets/Product/0011111.jpg", alt: "Custom carved wooden door" },
+    { id: 9, src: "/assets/Product/photo_0011.jpg", alt: "Sliding barn door design" },
+    { id: 10, src: "/assets/Product/photo_0022.jpg", alt: "Frosted glass office door" },
+    { id: 11, src: "/assets/Product/photo_0033.jpg", alt: "Energy efficient entry door" },
+    { id: 12, src: "/assets/Product/photo_0044.jpg", alt: "Modern pivot door with wooden finish" },
+    { id: 13, src: "/assets/Product/photo_0055.jpg", alt: "Stylish eco-friendly front door" },
+    { id: 14, src: "/assets/Product/photo_0066.jpg", alt: "Contemporary sliding glass door" },
+    { id: 16, src: "/assets/Product/photo_0088.jpg", alt: "Modern aluminum frame door"},
+    { id: 17, src: "/assets/Product/photo_0099.jpg", alt: "Sleek modern front door" },
+    { id: 18, src: "/assets/Product/photo_001011.jpg", alt: "Stylish eco-friendly patio door" },
+    { id: 20, src: "/assets/Product/photo_001033.jpg", alt: "Elegant glass sliding door" },
+    { id: 15, src: "/assets/Product/photo_0077.jpg", alt: "Elegant wooden double doors" },
+    { id: 23, src: "/assets/Product/0022.jpg", alt: "Contemporary glass entry door" },
+    { id: 24, src: "/assets/Product/0033.jpg", alt: "Sustainable wooden patio door" },
+    { id: 25, src: "/assets/Product/0044.jpg", alt: "Modern aluminum sliding door" },
+    { id: 26, src: "/assets/Product/0077.jpg", alt: "Stylish eco-friendly front door" },
+    { id: 27, src: "/assets/Product/photo_8.jpg", alt: "Contemporary glass door design" },
+    { id: 28, src: "/assets/Product/photo_34.jpg", alt: "Sustainable entry door with side panels" },
+    { id: 29, src: "/assets/Product/photo_20.jpg", alt: "Minimalist interior eco door" },
+    { id: 30, src: "/assets/Product/photo_33.jpg", alt: "Rustic wooden exterior door" },
+    { id: 31, src: "/assets/Product/photo_31.jpg", alt: "Rustic wooden exterior door" },
+    { id: 32, src: "/assets/Product/photo_23.jpg", alt: "Rustic wooden exterior door" },
+    { id: 33, src: "/assets/Product/photo_10.jpg", alt: "Rustic wooden exterior door" },
+    { id: 34, src: "/assets/Product/photo_9.jpg", alt: "Rustic wooden exterior door" },
+  ];
+
   useEffect(() => {
-    const speed = 60;
-    let animationFrameId;
-    let startTime;
-    let progress = 0;
+    if (galleryRef.current) {
+      const gallery = lightGallery(galleryRef.current, {
+        selector: '.gallery-item',
+        download: false,
+        thumbnail: true,
+        closable: true,
+        escKey: true,
+        closeOnTap: true,
+        closeOnSwipe: true,
+        showCloseIcon: true,
+        mode: 'lg-slide',
+        speed: 300,
+        backdropDuration: 150,
+        hideBarsDelay: 2000,
+        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        mobileSettings: {
+          controls: true,
+          showCloseIcon: true,
+          download: false
+        },
+        galleryId: 'eco-doors-gallery'
+      });
 
-    const animateScroll = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
-      progress = (elapsed / 1000) * speed;
-
-      if (topTrackRef.current) {
-        topTrackRef.current.style.transform = `translateX(-${progress}px)`;
-      }
-      if (bottomTrackRef.current) {
-        bottomTrackRef.current.style.transform = `translateX(${progress}px)`;
-      }
-
-      if (progress > galleryItems.length * 370) {
-        progress = 0;
-        startTime = timestamp;
-      }
-
-      animationFrameId = requestAnimationFrame(animateScroll);
-    };
-
-    animationFrameId = requestAnimationFrame(animateScroll);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, [galleryItems.length]);
-
-  // Memoized click handlers for better performance
-  const handleImageClick = useCallback((item) => {
-    setSelectedImage(item);
-    setModalOpen(true);
-  }, []);
-
-  const closeModal = useCallback((e) => {
-    e?.stopPropagation(); // Optional chaining in case it's called without event
-    setModalOpen(false);
-    setSelectedImage(null);
-  }, []);
-
-  // Close modal with ESC key - memoized handler
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        closeModal();
-      }
-    };
-
-    if (modalOpen) {
-      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+        gallery.destroy();
+      };
     }
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [modalOpen, closeModal]);
-
-  // Close modal when clicking outside (with improved event handling)
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (modalOpen && modalRef.current && !modalRef.current.contains(e.target)) {
-        closeModal();
-      }
-    };
-
-    if (modalOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [modalOpen, closeModal]);
+  }, []);
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -378,122 +107,216 @@ const EcoDoorGallery = () => {
     }
   };
 
-  const modalVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
-  };
-
   return (
     <>
-      <GlobalStyle modalOpen={modalOpen} />
       <Helmet>
         <title>Modern Eco-Friendly Doors | Premium Collection</title>
         <meta name="description" content="Browse our collection of beautifully crafted, sustainable doors with modern designs for every home" />
       </Helmet>
 
-      <GalleryWrapper ref={containerRef}>
-        <main className="eco-gallery-main">
+      <GalleryWrapper>
+        <main className="eco-gallery-main" ref={ref}>
           <Container>
-            <div className="sec-title text-center">
-              <div className="sec-title__tagline">
-                <span className="left"></span>
-                <h6>OUR PRODUCTS</h6>
-                <span className="right"></span>
-              </div>
-              <h5 className="sec-title__title">Sustainable & Stylish – Premium Eco Door Collection</h5>
-            </div>
+            <SectionHeader 
+              initial={{ opacity: 0, y: -20 }}
+              animate={controls}
+              transition={{ duration: 0.6 }}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: -20 }
+              }}
+            >
+              <span className="section-subtitle">OUR PRODUCTS</span>
+              <h1 className="section-title">High Quality Door Collection</h1>
+              <Divider>
+                <span className="middle"></span>
+              </Divider>
+              <p className="section-description">
+                Sustainable & Stylish – Premium Eco Door Collection
+              </p>
+            </SectionHeader>
             
-            {/* Top auto-scrolling gallery (left to right) */}
-            <AutoScrollGallery>
-              <ScrollTrack 
-                ref={topTrackRef}
-                variants={containerVariants}
-                initial="hidden"
-                animate={controls}
-                style={{ width: `${galleryItems.length * 370}px` }}
-              >
-                {doubledItems.map((item, i) => (
-                  <ScrollItem 
-                    key={`top-${item.id}-${i}`}
-                    onClick={() => handleImageClick(item)}
-                  >
-                    <ScrollImage
-                      src={item.src}
-                      alt={item.alt}
-                      loading="lazy"
-                    />
-                    <ZoomIcon className="zoom-icon">
-                      <FiClock />
-                    </ZoomIcon>
-                  </ScrollItem>
-                ))}
-              </ScrollTrack>
-            </AutoScrollGallery>
-
-            {/* Bottom auto-scrolling gallery (right to left) */}
-            <AutoScrollGallery>
-              <ScrollTrack 
-                ref={bottomTrackRef}
-                variants={containerVariants}
-                initial="hidden"
-                animate={controls}
-                style={{ 
-                  width: `${galleryItems.length * 370}px`,
-                  flexDirection: 'row-reverse'
-                }}
-              >
-                {doubledItems.map((item, i) => (
-                  <ScrollItem 
-                    key={`bottom-${item.id}-${i}`}
-                    onClick={() => handleImageClick(item)}
-                  >
-                    <ScrollImage
-                      src={item.src}
-                      alt={item.alt}
-                      loading="lazy"
-                    />
-                    <ZoomIcon className="zoom-icon">
-                      <FiClock />
-                    </ZoomIcon>
-                  </ScrollItem>
-                ))}
-              </ScrollTrack>
-            </AutoScrollGallery>
+            <GalleryGrid 
+              ref={galleryRef}
+              variants={containerVariants}
+              initial="hidden"
+              animate={controls}
+            >
+              {galleryItems.map((item, i) => (
+                <GalleryItemContainer
+                  key={item.id}
+                  custom={i}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.03, zIndex: 1 }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  <a href={item.src} className="gallery-item" aria-label={`View ${item.alt}`}>
+                    <ImageContainer>
+                      <ResponsiveImage
+                        src={item.src}
+                        alt={" "}
+                        loading="lazy"
+                      />
+                      <ImageOverlay>
+                        <ZoomIcon viewBox="0 0 24 24">
+                          <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </ZoomIcon>
+                      </ImageOverlay>
+                    </ImageContainer>
+                  </a>
+                </GalleryItemContainer>
+              ))}
+            </GalleryGrid>
           </Container>
         </main>
-
-        {/* Fullscreen Image Modal */}
-        <AnimatePresence>
-          {modalOpen && (
-            <ModalOverlay
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={modalVariants}
-              onClick={closeModal}
-            >
-              <ModalContent 
-                ref={modalRef}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <ModalImage
-                  src={selectedImage?.src}
-                  alt={selectedImage?.alt}
-                />
-                <CloseButton 
-                  onClick={closeModal} 
-                  aria-label="Close image"
-                  className="close-button"
-                >
-                  <FiX size={24} />
-                </CloseButton>
-              </ModalContent>
-            </ModalOverlay>
-          )}
-        </AnimatePresence>
       </GalleryWrapper>
     </>
   );
 };
+
+// Styled Components
+const GalleryWrapper = styled.div`
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: 'Inter', sans-serif;
+`;
+
+const SectionHeader = styled(motion.section)`
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+
+  .section-subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e8b57;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: #2a3439;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .section-description {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+`;
+
+const Divider = styled.div`
+  position: relative;
+  height: 4px;
+  width: 80px;
+  margin: 1.5rem auto;
+  background-color: rgba(46, 139, 87, 0.2);
+
+  .middle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 40px;
+    background-color: #2e8b57;
+  }
+`;
+
+const GalleryGrid = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+`;
+
+const GalleryItemContainer = styled(motion.div)`
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background: white;
+  will-change: transform;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 1;
+`;
+
+const ImageContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+`;
+
+const ResponsiveImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  will-change: transform;
+
+  ${GalleryItemContainer}:hover & {
+    transform: scale(1.05);
+  }
+`;
+
+const ImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+
+  .gallery-item:hover & {
+    opacity: 1;
+  }
+`;
+
+const ZoomIcon = styled.svg`
+  width: 40px;
+  height: 40px;
+  fill: white;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+
+  .gallery-item:hover & {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
 
 export default EcoDoorGallery;

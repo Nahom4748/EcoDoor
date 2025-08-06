@@ -15,7 +15,6 @@ import AboutThree from "../components/about/AboutThree";
 import TestimonialTwo from "../components/testimonial/TestimonialTwo.js";
 import OurCustomers from "../components/service/OurCustomers.js";
 import Unique from "../components/service/Unique.js";
-import Pro2 from "../components/Products/pro2.js"
 
 const HomeDefault = () => {
   return (
@@ -23,7 +22,6 @@ const HomeDefault = () => {
       <HeaderTwo />
       <HeroTwo />
       {/* <WhyChooseOne /> */}
-{/* <Pro2/> */}
       {/* <ServiceTwo /> */}
       {/* <AboutThree /> */}
       <Unique />

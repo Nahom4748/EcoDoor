@@ -129,7 +129,7 @@ export default class AboutThree extends React.Component {
                             <li>
                               <h6>
                                 <span className="icon-tick"></span>
-                                <strong>Durable, stylish Eco doors</strong> - Weather-resistant WPC construction
+                                <strong>Durable, stylish Eco doors</strong> - Weather-resistant construction
                               </h6>
                             </li>
                             <li>

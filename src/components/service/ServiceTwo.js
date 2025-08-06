@@ -14,10 +14,12 @@ export default class ServiceTwo extends React.Component {
         icon: "fa fa-user-tie"
       },
       {
-        title: "High-Quality WPC Products",
-        description: "We provide strong, long-lasting Wood-Plastic Composite products at competitive prices.",
-        image: "assets/images/services/Service Images6.jpg",
-        icon: "fa fa-award"
+     
+  title: "High-Quality Door Products",
+  description: "We offer strong, long-lasting door solutions made from modern, eco-friendly materials at competitive prices.",
+  image: "assets/images/services/Service Images6.jpg",
+  icon: "fa fa-award"
+
       },
       {
         title: "Professional Installation",

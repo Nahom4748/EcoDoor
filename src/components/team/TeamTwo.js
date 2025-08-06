@@ -29,7 +29,7 @@ export default function RecentProjects() {
     {
       id: 2,
       title: "Amesco Apartment Realstate",
-      description: "Modern apartments in Addis Ababa with custom eco-doors and stylish interiors, completed by Charot Eco Doors Company.",
+      description: "Modern apartments in Addis Ababa with custom eco-doors and stylish, completed by Charot Eco Doors Company.",
       images: [
         "assets/images/project/10001.png",
         "assets/images/project/10003.jpg",
